@@ -1,0 +1,353 @@
+\hypertarget{class_open_g_l_manager}{}\doxysection{Open\+G\+L\+Manager Class Reference}
+\label{class_open_g_l_manager}\index{OpenGLManager@{OpenGLManager}}
+
+
+Clase Open\+GL.  
+
+
+
+
+{\ttfamily \#include $<$Open\+G\+L\+Manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_open_g_l_manager_a5f7e216ff575e23228c103b76b58ff54}{Init\+Device}} ()
+\begin{DoxyCompactList}\small\item\em Se inicia el dispositivo. \end{DoxyCompactList}\item 
+H\+R\+E\+S\+U\+LT \mbox{\hyperlink{class_open_g_l_manager_a8dee90315e2e7bbbaf4b71a5082962dd}{Frame\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Crea el fram buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_open_g_l_manager_a23882f4de325452fe475f8a876f942e5}{process\+Input}} (G\+L\+F\+Wwindow $\ast$window, int key, int scancode, int action, int mods)
+\begin{DoxyCompactList}\small\item\em Toma y recibe inputs. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_open_g_l_manager_a39064d073b6a8feff886f30f3e657e3d}{Window\+G\+L\+FW}} ()
+\begin{DoxyCompactList}\small\item\em Usa G\+L\+FW para crear ventana. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_open_g_l_manager_a7821303c07a179f4b39cf8a7b0ca1e86}{Game\+Loop}} ()
+\begin{DoxyCompactList}\small\item\em Loopea el programa para actualizar frames. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_open_g_l_manager_a388c8a9aefeab82655d001a62311c885}{Init\+Cameras}} ()
+\begin{DoxyCompactList}\small\item\em Inicializacion de camaras. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_open_g_l_manager_a86e3d34892923850cbfe676cd36fb24d}{Bill\+Board}} ()
+\begin{DoxyCompactList}\small\item\em Crea el billboard. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_open_g_l_manager_a0564731322b4c5faa77589f5ab4d2fe4}{Update\+Bill\+Board}} ()
+\begin{DoxyCompactList}\small\item\em Actualiza el billboard. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_open_g_l_manager_a30060aebc132b19f963c6b473a8d8c2f}{render1}} ()
+\begin{DoxyCompactList}\small\item\em Render para la primera camara. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_open_g_l_manager_ae8ae450082fd5846139bb4b585cf07d1}{render2}} ()
+\begin{DoxyCompactList}\small\item\em Render para la segunda camara. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_scene_manager}{C\+Scene\+Manager}} \mbox{\hyperlink{class_open_g_l_manager_ae8dcfdb6ecb4bf2848b139823513975f}{m\+\_\+\+C\+Scene\+Manager}}
+\item 
+\mbox{\hyperlink{class_graphic_api}{Graphic\+Api}} \mbox{\hyperlink{class_open_g_l_manager_afe5c57d95323141661c4f09cbf37e0fa}{m\+\_\+\+Graphic\+Api}}
+\item 
+\mbox{\hyperlink{class_c_render_target}{C\+Render\+Target}} \mbox{\hyperlink{class_open_g_l_manager_a5bd4a01c6ef7b610426ee14468a6cc45}{m\+\_\+\+Render\+Target}}
+\item 
+\mbox{\hyperlink{class_c_render_target_view}{C\+Render\+Target\+View}} \mbox{\hyperlink{class_open_g_l_manager_aadc95da715bc0944a96907572ec21c02}{m\+\_\+\+Render\+Target\+View}}
+\item 
+\mbox{\hyperlink{class_c_buffer}{C\+Buffer}} \mbox{\hyperlink{class_open_g_l_manager_a4b8cf34bbeb31bca8b9857cea32b9a67}{m\+\_\+\+Buffers}}
+\item 
+\mbox{\hyperlink{class_c_camera}{C\+Camera}} \mbox{\hyperlink{class_open_g_l_manager_a3920cf2ec9ac7285bda6b36304ecce3c}{m\+\_\+\+Free\+Camera}}
+\item 
+\mbox{\hyperlink{class_first_camera}{First\+Camera}} \mbox{\hyperlink{class_open_g_l_manager_ab7efeb986f5f3be74567994b541c4fda}{m\+\_\+\+F\+P\+S\+Camera}}
+\item 
+G\+Luint \mbox{\hyperlink{class_open_g_l_manager_a3db58afc2c17d7ebe50426b9280d4a15}{m\+\_\+frame\+Buffer\+Name}}
+\item 
+G\+Luint \mbox{\hyperlink{class_open_g_l_manager_ab1d6f89c4f0c8e24fb71976efc0ad238}{m\+\_\+program\+Shader\+ID}}
+\item 
+G\+L\+F\+Wwindow $\ast$ \mbox{\hyperlink{class_open_g_l_manager_a924c9c7a3081d8de52529e8e5c946c99}{m\+\_\+window}}
+\item 
+G\+Luint \mbox{\hyperlink{class_open_g_l_manager_a9ebe9b64f181cb45f7d23a165c521bb2}{m\+\_\+\+Texture\+Billboard}}
+\item 
+G\+Luint \mbox{\hyperlink{class_open_g_l_manager_ad39fb15b46fb202c178130d14b6f6df9}{m\+\_\+vertex\+Buffer\+Bill\+Board}}
+\item 
+G\+Luint \mbox{\hyperlink{class_open_g_l_manager_a9b491c83e60c28d852571a8d8ebddafe}{m\+\_\+\+Index\+Buffer\+Bill\+Board}}
+\item 
+G\+Luint \mbox{\hyperlink{class_open_g_l_manager_ad8029c9287f0730cd72f575346efe0fe}{rendered\+Texture}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase Open\+GL. 
+
+Uso del Api y administracion de recursos 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_open_g_l_manager_a86e3d34892923850cbfe676cd36fb24d}\label{class_open_g_l_manager_a86e3d34892923850cbfe676cd36fb24d}} 
+\index{OpenGLManager@{OpenGLManager}!BillBoard@{BillBoard}}
+\index{BillBoard@{BillBoard}!OpenGLManager@{OpenGLManager}}
+\doxysubsubsection{\texorpdfstring{BillBoard()}{BillBoard()}}
+{\footnotesize\ttfamily void Open\+G\+L\+Manager\+::\+Bill\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Crea el billboard. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_open_g_l_manager_a8dee90315e2e7bbbaf4b71a5082962dd}\label{class_open_g_l_manager_a8dee90315e2e7bbbaf4b71a5082962dd}} 
+\index{OpenGLManager@{OpenGLManager}!FrameBuffer@{FrameBuffer}}
+\index{FrameBuffer@{FrameBuffer}!OpenGLManager@{OpenGLManager}}
+\doxysubsubsection{\texorpdfstring{FrameBuffer()}{FrameBuffer()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT Open\+G\+L\+Manager\+::\+Frame\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Crea el fram buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily H\+R\+E\+S\+U\+LT} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_open_g_l_manager_a7821303c07a179f4b39cf8a7b0ca1e86}\label{class_open_g_l_manager_a7821303c07a179f4b39cf8a7b0ca1e86}} 
+\index{OpenGLManager@{OpenGLManager}!GameLoop@{GameLoop}}
+\index{GameLoop@{GameLoop}!OpenGLManager@{OpenGLManager}}
+\doxysubsubsection{\texorpdfstring{GameLoop()}{GameLoop()}}
+{\footnotesize\ttfamily void Open\+G\+L\+Manager\+::\+Game\+Loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Loopea el programa para actualizar frames. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_open_g_l_manager_a388c8a9aefeab82655d001a62311c885}\label{class_open_g_l_manager_a388c8a9aefeab82655d001a62311c885}} 
+\index{OpenGLManager@{OpenGLManager}!InitCameras@{InitCameras}}
+\index{InitCameras@{InitCameras}!OpenGLManager@{OpenGLManager}}
+\doxysubsubsection{\texorpdfstring{InitCameras()}{InitCameras()}}
+{\footnotesize\ttfamily void Open\+G\+L\+Manager\+::\+Init\+Cameras (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Inicializacion de camaras. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_open_g_l_manager_a5f7e216ff575e23228c103b76b58ff54}\label{class_open_g_l_manager_a5f7e216ff575e23228c103b76b58ff54}} 
+\index{OpenGLManager@{OpenGLManager}!InitDevice@{InitDevice}}
+\index{InitDevice@{InitDevice}!OpenGLManager@{OpenGLManager}}
+\doxysubsubsection{\texorpdfstring{InitDevice()}{InitDevice()}}
+{\footnotesize\ttfamily void Open\+G\+L\+Manager\+::\+Init\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Se inicia el dispositivo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_open_g_l_manager_a23882f4de325452fe475f8a876f942e5}\label{class_open_g_l_manager_a23882f4de325452fe475f8a876f942e5}} 
+\index{OpenGLManager@{OpenGLManager}!processInput@{processInput}}
+\index{processInput@{processInput}!OpenGLManager@{OpenGLManager}}
+\doxysubsubsection{\texorpdfstring{processInput()}{processInput()}}
+{\footnotesize\ttfamily void Open\+G\+L\+Manager\+::process\+Input (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{int}]{key,  }\item[{int}]{scancode,  }\item[{int}]{action,  }\item[{int}]{mods }\end{DoxyParamCaption})}
+
+
+
+Toma y recibe inputs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily G\+L\+F\+Wwindow$\ast$} {\ttfamily window} \\
+\hline
+{\em 2} & {\ttfamily int} {\ttfamily key} \\
+\hline
+{\em 3} & {\ttfamily int} {\ttfamily scancode} \\
+\hline
+{\em 4} & {\ttfamily int} {\ttfamily action} \\
+\hline
+{\em 5} & {\ttfamily int} {\ttfamily mods} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_open_g_l_manager_a30060aebc132b19f963c6b473a8d8c2f}\label{class_open_g_l_manager_a30060aebc132b19f963c6b473a8d8c2f}} 
+\index{OpenGLManager@{OpenGLManager}!render1@{render1}}
+\index{render1@{render1}!OpenGLManager@{OpenGLManager}}
+\doxysubsubsection{\texorpdfstring{render1()}{render1()}}
+{\footnotesize\ttfamily void Open\+G\+L\+Manager\+::render1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Render para la primera camara. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_open_g_l_manager_ae8ae450082fd5846139bb4b585cf07d1}\label{class_open_g_l_manager_ae8ae450082fd5846139bb4b585cf07d1}} 
+\index{OpenGLManager@{OpenGLManager}!render2@{render2}}
+\index{render2@{render2}!OpenGLManager@{OpenGLManager}}
+\doxysubsubsection{\texorpdfstring{render2()}{render2()}}
+{\footnotesize\ttfamily void Open\+G\+L\+Manager\+::render2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Render para la segunda camara. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_open_g_l_manager_a0564731322b4c5faa77589f5ab4d2fe4}\label{class_open_g_l_manager_a0564731322b4c5faa77589f5ab4d2fe4}} 
+\index{OpenGLManager@{OpenGLManager}!UpdateBillBoard@{UpdateBillBoard}}
+\index{UpdateBillBoard@{UpdateBillBoard}!OpenGLManager@{OpenGLManager}}
+\doxysubsubsection{\texorpdfstring{UpdateBillBoard()}{UpdateBillBoard()}}
+{\footnotesize\ttfamily void Open\+G\+L\+Manager\+::\+Update\+Bill\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Actualiza el billboard. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_open_g_l_manager_a39064d073b6a8feff886f30f3e657e3d}\label{class_open_g_l_manager_a39064d073b6a8feff886f30f3e657e3d}} 
+\index{OpenGLManager@{OpenGLManager}!WindowGLFW@{WindowGLFW}}
+\index{WindowGLFW@{WindowGLFW}!OpenGLManager@{OpenGLManager}}
+\doxysubsubsection{\texorpdfstring{WindowGLFW()}{WindowGLFW()}}
+{\footnotesize\ttfamily int Open\+G\+L\+Manager\+::\+Window\+G\+L\+FW (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Usa G\+L\+FW para crear ventana. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily int} 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_open_g_l_manager_a4b8cf34bbeb31bca8b9857cea32b9a67}\label{class_open_g_l_manager_a4b8cf34bbeb31bca8b9857cea32b9a67}} 
+\index{OpenGLManager@{OpenGLManager}!m\_Buffers@{m\_Buffers}}
+\index{m\_Buffers@{m\_Buffers}!OpenGLManager@{OpenGLManager}}
+\doxysubsubsection{\texorpdfstring{m\_Buffers}{m\_Buffers}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_buffer}{C\+Buffer}} Open\+G\+L\+Manager\+::m\+\_\+\+Buffers}
+
+Bufferes \mbox{\Hypertarget{class_open_g_l_manager_ae8dcfdb6ecb4bf2848b139823513975f}\label{class_open_g_l_manager_ae8dcfdb6ecb4bf2848b139823513975f}} 
+\index{OpenGLManager@{OpenGLManager}!m\_CSceneManager@{m\_CSceneManager}}
+\index{m\_CSceneManager@{m\_CSceneManager}!OpenGLManager@{OpenGLManager}}
+\doxysubsubsection{\texorpdfstring{m\_CSceneManager}{m\_CSceneManager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_scene_manager}{C\+Scene\+Manager}} Open\+G\+L\+Manager\+::m\+\_\+\+C\+Scene\+Manager}
+
+Scenemanager para opengl \mbox{\Hypertarget{class_open_g_l_manager_ab7efeb986f5f3be74567994b541c4fda}\label{class_open_g_l_manager_ab7efeb986f5f3be74567994b541c4fda}} 
+\index{OpenGLManager@{OpenGLManager}!m\_FPSCamera@{m\_FPSCamera}}
+\index{m\_FPSCamera@{m\_FPSCamera}!OpenGLManager@{OpenGLManager}}
+\doxysubsubsection{\texorpdfstring{m\_FPSCamera}{m\_FPSCamera}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_first_camera}{First\+Camera}} Open\+G\+L\+Manager\+::m\+\_\+\+F\+P\+S\+Camera}
+
+Camara en primera persona \mbox{\Hypertarget{class_open_g_l_manager_a3db58afc2c17d7ebe50426b9280d4a15}\label{class_open_g_l_manager_a3db58afc2c17d7ebe50426b9280d4a15}} 
+\index{OpenGLManager@{OpenGLManager}!m\_frameBufferName@{m\_frameBufferName}}
+\index{m\_frameBufferName@{m\_frameBufferName}!OpenGLManager@{OpenGLManager}}
+\doxysubsubsection{\texorpdfstring{m\_frameBufferName}{m\_frameBufferName}}
+{\footnotesize\ttfamily G\+Luint Open\+G\+L\+Manager\+::m\+\_\+frame\+Buffer\+Name}
+
+Nombre del buffer \mbox{\Hypertarget{class_open_g_l_manager_a3920cf2ec9ac7285bda6b36304ecce3c}\label{class_open_g_l_manager_a3920cf2ec9ac7285bda6b36304ecce3c}} 
+\index{OpenGLManager@{OpenGLManager}!m\_FreeCamera@{m\_FreeCamera}}
+\index{m\_FreeCamera@{m\_FreeCamera}!OpenGLManager@{OpenGLManager}}
+\doxysubsubsection{\texorpdfstring{m\_FreeCamera}{m\_FreeCamera}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_camera}{C\+Camera}} Open\+G\+L\+Manager\+::m\+\_\+\+Free\+Camera}
+
+Camra libre \mbox{\Hypertarget{class_open_g_l_manager_afe5c57d95323141661c4f09cbf37e0fa}\label{class_open_g_l_manager_afe5c57d95323141661c4f09cbf37e0fa}} 
+\index{OpenGLManager@{OpenGLManager}!m\_GraphicApi@{m\_GraphicApi}}
+\index{m\_GraphicApi@{m\_GraphicApi}!OpenGLManager@{OpenGLManager}}
+\doxysubsubsection{\texorpdfstring{m\_GraphicApi}{m\_GraphicApi}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_graphic_api}{Graphic\+Api}} Open\+G\+L\+Manager\+::m\+\_\+\+Graphic\+Api}
+
+Graphics api para opengl \mbox{\Hypertarget{class_open_g_l_manager_a9b491c83e60c28d852571a8d8ebddafe}\label{class_open_g_l_manager_a9b491c83e60c28d852571a8d8ebddafe}} 
+\index{OpenGLManager@{OpenGLManager}!m\_IndexBufferBillBoard@{m\_IndexBufferBillBoard}}
+\index{m\_IndexBufferBillBoard@{m\_IndexBufferBillBoard}!OpenGLManager@{OpenGLManager}}
+\doxysubsubsection{\texorpdfstring{m\_IndexBufferBillBoard}{m\_IndexBufferBillBoard}}
+{\footnotesize\ttfamily G\+Luint Open\+G\+L\+Manager\+::m\+\_\+\+Index\+Buffer\+Bill\+Board}
+
+Buffer de indices del billboard \mbox{\Hypertarget{class_open_g_l_manager_ab1d6f89c4f0c8e24fb71976efc0ad238}\label{class_open_g_l_manager_ab1d6f89c4f0c8e24fb71976efc0ad238}} 
+\index{OpenGLManager@{OpenGLManager}!m\_programShaderID@{m\_programShaderID}}
+\index{m\_programShaderID@{m\_programShaderID}!OpenGLManager@{OpenGLManager}}
+\doxysubsubsection{\texorpdfstring{m\_programShaderID}{m\_programShaderID}}
+{\footnotesize\ttfamily G\+Luint Open\+G\+L\+Manager\+::m\+\_\+program\+Shader\+ID}
+
+Shader id con la que se va iniciar el programa \mbox{\Hypertarget{class_open_g_l_manager_a5bd4a01c6ef7b610426ee14468a6cc45}\label{class_open_g_l_manager_a5bd4a01c6ef7b610426ee14468a6cc45}} 
+\index{OpenGLManager@{OpenGLManager}!m\_RenderTarget@{m\_RenderTarget}}
+\index{m\_RenderTarget@{m\_RenderTarget}!OpenGLManager@{OpenGLManager}}
+\doxysubsubsection{\texorpdfstring{m\_RenderTarget}{m\_RenderTarget}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_render_target}{C\+Render\+Target}} Open\+G\+L\+Manager\+::m\+\_\+\+Render\+Target}
+
+Render target en el cual se pinta \mbox{\Hypertarget{class_open_g_l_manager_aadc95da715bc0944a96907572ec21c02}\label{class_open_g_l_manager_aadc95da715bc0944a96907572ec21c02}} 
+\index{OpenGLManager@{OpenGLManager}!m\_RenderTargetView@{m\_RenderTargetView}}
+\index{m\_RenderTargetView@{m\_RenderTargetView}!OpenGLManager@{OpenGLManager}}
+\doxysubsubsection{\texorpdfstring{m\_RenderTargetView}{m\_RenderTargetView}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_render_target_view}{C\+Render\+Target\+View}} Open\+G\+L\+Manager\+::m\+\_\+\+Render\+Target\+View}
+
+Profundidad \mbox{\Hypertarget{class_open_g_l_manager_a9ebe9b64f181cb45f7d23a165c521bb2}\label{class_open_g_l_manager_a9ebe9b64f181cb45f7d23a165c521bb2}} 
+\index{OpenGLManager@{OpenGLManager}!m\_TextureBillboard@{m\_TextureBillboard}}
+\index{m\_TextureBillboard@{m\_TextureBillboard}!OpenGLManager@{OpenGLManager}}
+\doxysubsubsection{\texorpdfstring{m\_TextureBillboard}{m\_TextureBillboard}}
+{\footnotesize\ttfamily G\+Luint Open\+G\+L\+Manager\+::m\+\_\+\+Texture\+Billboard}
+
+Textura del billboard \mbox{\Hypertarget{class_open_g_l_manager_ad39fb15b46fb202c178130d14b6f6df9}\label{class_open_g_l_manager_ad39fb15b46fb202c178130d14b6f6df9}} 
+\index{OpenGLManager@{OpenGLManager}!m\_vertexBufferBillBoard@{m\_vertexBufferBillBoard}}
+\index{m\_vertexBufferBillBoard@{m\_vertexBufferBillBoard}!OpenGLManager@{OpenGLManager}}
+\doxysubsubsection{\texorpdfstring{m\_vertexBufferBillBoard}{m\_vertexBufferBillBoard}}
+{\footnotesize\ttfamily G\+Luint Open\+G\+L\+Manager\+::m\+\_\+vertex\+Buffer\+Bill\+Board}
+
+vertex del billboard \mbox{\Hypertarget{class_open_g_l_manager_a924c9c7a3081d8de52529e8e5c946c99}\label{class_open_g_l_manager_a924c9c7a3081d8de52529e8e5c946c99}} 
+\index{OpenGLManager@{OpenGLManager}!m\_window@{m\_window}}
+\index{m\_window@{m\_window}!OpenGLManager@{OpenGLManager}}
+\doxysubsubsection{\texorpdfstring{m\_window}{m\_window}}
+{\footnotesize\ttfamily G\+L\+F\+Wwindow$\ast$ Open\+G\+L\+Manager\+::m\+\_\+window}
+
+Ventana \mbox{\Hypertarget{class_open_g_l_manager_ad8029c9287f0730cd72f575346efe0fe}\label{class_open_g_l_manager_ad8029c9287f0730cd72f575346efe0fe}} 
+\index{OpenGLManager@{OpenGLManager}!renderedTexture@{renderedTexture}}
+\index{renderedTexture@{renderedTexture}!OpenGLManager@{OpenGLManager}}
+\doxysubsubsection{\texorpdfstring{renderedTexture}{renderedTexture}}
+{\footnotesize\ttfamily G\+Luint Open\+G\+L\+Manager\+::rendered\+Texture}
+
+Textura que renderizara 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_open_g_l_manager_8h}{Open\+G\+L\+Manager.\+h}}\end{DoxyCompactItemize}

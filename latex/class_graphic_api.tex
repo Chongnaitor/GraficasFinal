@@ -1,0 +1,99 @@
+\hypertarget{class_graphic_api}{}\doxysection{Graphic\+Api Class Reference}
+\label{class_graphic_api}\index{GraphicApi@{GraphicApi}}
+
+
+Clase \mbox{\hyperlink{class_graphic_api}{Graphic\+Api}}.  
+
+
+
+
+{\ttfamily \#include $<$Graphic\+Api.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_graphic_api_ace12780dcc3aa1cd2aef7539870b15a5}{Charge\+Mesh}} (const char $\ast$\+\_\+mesh\+Path, \mbox{\hyperlink{class_c_scene_manager}{C\+Scene\+Manager}} $\ast$\+\_\+\+C\+Scene\+Manager, const ai\+Scene $\ast$\+\_\+model, \mbox{\hyperlink{class_c_device_context}{C\+Device\+Context}} \+\_\+dev\+Cont, Assimp\+::\+Importer $\ast$\+\_\+importer, \mbox{\hyperlink{class_c_device}{C\+Device}} $\ast$\+\_\+dev)
+\begin{DoxyCompactList}\small\item\em Carga el modelo para DirectX. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_graphic_api_a22b82a7dbc3c078e5083cdbf98f805cc}{Charge\+Mesh}} (const char $\ast$\+\_\+mesh\+Path, const ai\+Scene $\ast$\+\_\+model, \mbox{\hyperlink{class_c_scene_manager}{C\+Scene\+Manager}} $\ast$\+\_\+\+C\+Scene\+Manager)
+\begin{DoxyCompactList}\small\item\em Carga de modelo para Open\+GL. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const ai\+Scene $\ast$ \mbox{\hyperlink{class_graphic_api_a1da9d8d8636e93c354770e5a07a053e7}{m\+\_\+\+Model}} = new const ai\+Scene()
+\item 
+Assimp\+::\+Importer $\ast$ \mbox{\hyperlink{class_graphic_api_a43c136ad66dca20fc31b08caf47119b9}{m\+\_\+\+Importer}} =new Assimp\+::\+Importer()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase \mbox{\hyperlink{class_graphic_api}{Graphic\+Api}}. 
+
+Descripcion Usa otras clases y asimp para la carga de modelos y sus respectivos atribustos ya sea DirectX u Open\+GL 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_graphic_api_a22b82a7dbc3c078e5083cdbf98f805cc}\label{class_graphic_api_a22b82a7dbc3c078e5083cdbf98f805cc}} 
+\index{GraphicApi@{GraphicApi}!ChargeMesh@{ChargeMesh}}
+\index{ChargeMesh@{ChargeMesh}!GraphicApi@{GraphicApi}}
+\doxysubsubsection{\texorpdfstring{ChargeMesh()}{ChargeMesh()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Graphic\+Api\+::\+Charge\+Mesh (\begin{DoxyParamCaption}\item[{const char $\ast$}]{\+\_\+mesh\+Path,  }\item[{const ai\+Scene $\ast$}]{\+\_\+model,  }\item[{\mbox{\hyperlink{class_c_scene_manager}{C\+Scene\+Manager}} $\ast$}]{\+\_\+\+C\+Scene\+Manager }\end{DoxyParamCaption})}
+
+
+
+Carga de modelo para Open\+GL. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily const} {\ttfamily char$\ast$} {\ttfamily \+\_\+mesh\+Path} param2 {\ttfamily const} {\ttfamily ai\+Scene$\ast$} {\ttfamily \+\_\+model} param3 {\ttfamily C\+Scene\+Manger} {\ttfamily \+\_\+\+Scene\+Manager} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_graphic_api_ace12780dcc3aa1cd2aef7539870b15a5}\label{class_graphic_api_ace12780dcc3aa1cd2aef7539870b15a5}} 
+\index{GraphicApi@{GraphicApi}!ChargeMesh@{ChargeMesh}}
+\index{ChargeMesh@{ChargeMesh}!GraphicApi@{GraphicApi}}
+\doxysubsubsection{\texorpdfstring{ChargeMesh()}{ChargeMesh()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Graphic\+Api\+::\+Charge\+Mesh (\begin{DoxyParamCaption}\item[{const char $\ast$}]{\+\_\+mesh\+Path,  }\item[{\mbox{\hyperlink{class_c_scene_manager}{C\+Scene\+Manager}} $\ast$}]{\+\_\+\+C\+Scene\+Manager,  }\item[{const ai\+Scene $\ast$}]{\+\_\+model,  }\item[{\mbox{\hyperlink{class_c_device_context}{C\+Device\+Context}}}]{\+\_\+dev\+Cont,  }\item[{Assimp\+::\+Importer $\ast$}]{\+\_\+importer,  }\item[{\mbox{\hyperlink{class_c_device}{C\+Device}} $\ast$}]{\+\_\+dev }\end{DoxyParamCaption})}
+
+
+
+Carga el modelo para DirectX. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily const} {\ttfamily char$\ast$} {\ttfamily \+\_\+mesh\+Path} \\
+\hline
+{\em 2} & {\ttfamily C\+Scene\+Manager$\ast$} {\ttfamily \+\_\+\+C\+Sene\+Manager} \\
+\hline
+{\em 3} & {\ttfamily const} {\ttfamily ai\+Scene$\ast$} {\ttfamily \+\_\+model} \\
+\hline
+{\em 4} & {\ttfamily \mbox{\hyperlink{class_c_device_context}{C\+Device\+Context}}} {\ttfamily \+\_\+dev\+Cont} \\
+\hline
+{\em 5} & {\ttfamily Assim\+::\+Importer$\ast$} {\ttfamily \+\_\+importer} \\
+\hline
+{\em 6} & {\ttfamily C\+Device$\ast$} {\ttfamily \+\_\+dev} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily bool} 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_graphic_api_a43c136ad66dca20fc31b08caf47119b9}\label{class_graphic_api_a43c136ad66dca20fc31b08caf47119b9}} 
+\index{GraphicApi@{GraphicApi}!m\_Importer@{m\_Importer}}
+\index{m\_Importer@{m\_Importer}!GraphicApi@{GraphicApi}}
+\doxysubsubsection{\texorpdfstring{m\_Importer}{m\_Importer}}
+{\footnotesize\ttfamily Assimp\+::\+Importer$\ast$ Graphic\+Api\+::m\+\_\+\+Importer =new Assimp\+::\+Importer()}
+
+Creamos un importador de modelos \mbox{\Hypertarget{class_graphic_api_a1da9d8d8636e93c354770e5a07a053e7}\label{class_graphic_api_a1da9d8d8636e93c354770e5a07a053e7}} 
+\index{GraphicApi@{GraphicApi}!m\_Model@{m\_Model}}
+\index{m\_Model@{m\_Model}!GraphicApi@{GraphicApi}}
+\doxysubsubsection{\texorpdfstring{m\_Model}{m\_Model}}
+{\footnotesize\ttfamily const ai\+Scene$\ast$ Graphic\+Api\+::m\+\_\+\+Model = new const ai\+Scene()}
+
+Creamos una escena que contiene modelos 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_graphic_api_8h}{Graphic\+Api.\+h}}\end{DoxyCompactItemize}

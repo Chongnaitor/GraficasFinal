@@ -1,0 +1,329 @@
+\hypertarget{class_c_buffer}{}\doxysection{C\+Buffer Class Reference}
+\label{class_c_buffer}\index{CBuffer@{CBuffer}}
+
+
+Clase Buffer.  
+
+
+
+
+{\ttfamily \#include $<$C\+Buffer.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_buffer_a9aa6d54f4896c98dd9e2269969f3ca2a}{C\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Constuctor\+: setea todo en nulo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_buffer_ab5e8bcbbfc7920c3cca12094f211cea9}{$\sim$\+C\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_buffer_a41ceab80d5e0c5562c3cc38add0fc096}{Init}} (\mbox{\hyperlink{struct_buffer_descriptor}{Buffer\+Descriptor}} \+\_\+buff)
+\begin{DoxyCompactList}\small\item\em Inicializa el buffer en base a su descriptor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_buffer_a2add6f9fe11c28ede138394048ef56f1}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Actualiza los buffers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_buffer_aeadc28328c4b962805dd621f6822bf8d}{Delete}} ()
+\begin{DoxyCompactList}\small\item\em Borra los datos de los Buffers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_buffer_ae46b18ecb75fedf658f89e17cef7274d}{Render}} ()
+\begin{DoxyCompactList}\small\item\em No se utiliza. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_buffer_a339b7776a624c51fe535f4a33045d8fa}{Open\+G\+L\+V\+AO}} ()
+\begin{DoxyCompactList}\small\item\em Es una funcion que contiene uno o mas objetos de vertex vuffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_c_buffer_af23b166d07e6cd13fa2b65260e722bde}{create\+Vertex\+Buffer}} (int \+\_\+numvertex, const ai\+Scene $\ast$\+\_\+model, \mbox{\hyperlink{struct_simple_vertex}{Simple\+Vertex}} $\ast$\+\_\+vertex, I\+D3\+D11\+Buffer $\ast$\&\+\_\+buffer, \mbox{\hyperlink{class_c_device}{C\+Device}} $\ast$\+\_\+dev)
+\begin{DoxyCompactList}\small\item\em Crea el buffer de vertices. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_c_buffer_a37a902f9b57591d05c652ee4faa8124d}{create\+Index\+Buffer}} (int numindices, const ai\+Scene $\ast$\+\_\+model, W\+O\+RD $\ast$\+\_\+index, I\+D3\+D11\+Buffer $\ast$\&\+\_\+buffer, \mbox{\hyperlink{class_c_device}{C\+Device}} $\ast$\+\_\+dev)
+\begin{DoxyCompactList}\small\item\em Crea el buffer de indices. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_c_buffer_aa2638416757112f7ae97e32798b9d8e3}{create\+Vertex\+Buffer}} (int \+\_\+numvertex, \mbox{\hyperlink{struct_simple_vertex}{Simple\+Vertex}} $\ast$\+\_\+vertex, G\+Luint \&\+\_\+buffer)
+\begin{DoxyCompactList}\small\item\em Crea el buffer de vertices de Open\+GL. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_c_buffer_a7ee04a1f151d018db4bfa1655d1864cc}{create\+Index\+Buffer}} (int numindices, W\+O\+RD $\ast$\+\_\+index, G\+Luint \&\+\_\+buffer)
+\begin{DoxyCompactList}\small\item\em Crea el buffer de indices de Open\+GL. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_buffer_descriptor}{Buffer\+Descriptor}} \mbox{\hyperlink{class_c_buffer_a8a686e618415f061932129e4cb5a9514}{m\+\_\+\+Desc\+Buff}}
+\item 
+I\+D3\+D11\+Buffer $\ast$ \mbox{\hyperlink{class_c_buffer_a029081f92cf909496ccd037994b0ed08}{m\+\_\+\+Buffer\+D3\+D11}}
+\item 
+D3\+D11\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+D\+E\+SC \mbox{\hyperlink{class_c_buffer_aab323d42b81d138b05cd0cab4496bb51}{m\+\_\+\+Buffer\+Desc\+D3\+D11}}
+\item 
+G\+Luint \mbox{\hyperlink{class_c_buffer_a4e68d071b556f2686d1936fc1762d2da}{m\+\_\+\+ID}}
+\item 
+G\+Luint \mbox{\hyperlink{class_c_buffer_a92464595541f8a545bd2d2560effaa2b}{m\+\_\+vertexbuffer}}
+\item 
+G\+Luint \mbox{\hyperlink{class_c_buffer_a6b21e042616e466f05ee677f6bc82e72}{m\+\_\+elementbuffer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase Buffer. 
+
+Descripcion\+: Sirve para el almacenamiento de difertentes tipos de datos 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_buffer_a9aa6d54f4896c98dd9e2269969f3ca2a}\label{class_c_buffer_a9aa6d54f4896c98dd9e2269969f3ca2a}} 
+\index{CBuffer@{CBuffer}!CBuffer@{CBuffer}}
+\index{CBuffer@{CBuffer}!CBuffer@{CBuffer}}
+\doxysubsubsection{\texorpdfstring{CBuffer()}{CBuffer()}}
+{\footnotesize\ttfamily C\+Buffer\+::\+C\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constuctor\+: setea todo en nulo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Ninguno} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+Se establece las variables en {\ttfamily N\+U\+LL} \mbox{\Hypertarget{class_c_buffer_ab5e8bcbbfc7920c3cca12094f211cea9}\label{class_c_buffer_ab5e8bcbbfc7920c3cca12094f211cea9}} 
+\index{CBuffer@{CBuffer}!````~CBuffer@{$\sim$CBuffer}}
+\index{````~CBuffer@{$\sim$CBuffer}!CBuffer@{CBuffer}}
+\doxysubsubsection{\texorpdfstring{$\sim$CBuffer()}{~CBuffer()}}
+{\footnotesize\ttfamily C\+Buffer\+::$\sim$\+C\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Ninguno} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_buffer_a37a902f9b57591d05c652ee4faa8124d}\label{class_c_buffer_a37a902f9b57591d05c652ee4faa8124d}} 
+\index{CBuffer@{CBuffer}!createIndexBuffer@{createIndexBuffer}}
+\index{createIndexBuffer@{createIndexBuffer}!CBuffer@{CBuffer}}
+\doxysubsubsection{\texorpdfstring{createIndexBuffer()}{createIndexBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void C\+Buffer\+::create\+Index\+Buffer (\begin{DoxyParamCaption}\item[{int}]{numindices,  }\item[{const ai\+Scene $\ast$}]{\+\_\+model,  }\item[{W\+O\+RD $\ast$}]{\+\_\+index,  }\item[{I\+D3\+D11\+Buffer $\ast$\&}]{\+\_\+buffer,  }\item[{\mbox{\hyperlink{class_c_device}{C\+Device}} $\ast$}]{\+\_\+dev }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Crea el buffer de indices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily int} {\ttfamily numindices} Numero de indices \\
+\hline
+{\em 2} & {\ttfamily const} {\ttfamily ai\+Scene$\ast$} {\ttfamily \+\_\+model} El modelo del cual se van a extraer los vertices \\
+\hline
+{\em 4} & {\ttfamily I\+D3\+D11\+Buffer$\ast$\&} {\ttfamily \+\_\+buffer} El buffer a usar en la carga de DirectX \\
+\hline
+{\em 5} & {\ttfamily C\+Device$\ast$} {\ttfamily \+\_\+\+\_\+dev} Device usado para gestion de recursos \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_buffer_a7ee04a1f151d018db4bfa1655d1864cc}\label{class_c_buffer_a7ee04a1f151d018db4bfa1655d1864cc}} 
+\index{CBuffer@{CBuffer}!createIndexBuffer@{createIndexBuffer}}
+\index{createIndexBuffer@{createIndexBuffer}!CBuffer@{CBuffer}}
+\doxysubsubsection{\texorpdfstring{createIndexBuffer()}{createIndexBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void C\+Buffer\+::create\+Index\+Buffer (\begin{DoxyParamCaption}\item[{int}]{numindices,  }\item[{W\+O\+RD $\ast$}]{\+\_\+index,  }\item[{G\+Luint \&}]{\+\_\+buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Crea el buffer de indices de Open\+GL. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily int} {\ttfamily numindices} Es el numero de indices \\
+\hline
+{\em 2} & {\ttfamily W\+O\+R\+D$\ast$} {\ttfamily \+\_\+index} es el Index \\
+\hline
+{\em 3} & {\ttfamily G\+Luint\&} {\ttfamily \+\_\+buffer} buffer que va a almacenar la informacion de Open\+GL \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_buffer_af23b166d07e6cd13fa2b65260e722bde}\label{class_c_buffer_af23b166d07e6cd13fa2b65260e722bde}} 
+\index{CBuffer@{CBuffer}!createVertexBuffer@{createVertexBuffer}}
+\index{createVertexBuffer@{createVertexBuffer}!CBuffer@{CBuffer}}
+\doxysubsubsection{\texorpdfstring{createVertexBuffer()}{createVertexBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void C\+Buffer\+::create\+Vertex\+Buffer (\begin{DoxyParamCaption}\item[{int}]{\+\_\+numvertex,  }\item[{const ai\+Scene $\ast$}]{\+\_\+model,  }\item[{\mbox{\hyperlink{struct_simple_vertex}{Simple\+Vertex}} $\ast$}]{\+\_\+vertex,  }\item[{I\+D3\+D11\+Buffer $\ast$\&}]{\+\_\+buffer,  }\item[{\mbox{\hyperlink{class_c_device}{C\+Device}} $\ast$}]{\+\_\+dev }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Crea el buffer de vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily int} {\ttfamily \+\_\+numvertex} numero de vertices \\
+\hline
+{\em 2} & {\ttfamily const} {\ttfamily ai\+Scene$\ast$} {\ttfamily \+\_\+mode} Escena de assimp \\
+\hline
+{\em 3} & {\ttfamily Simple\+Vertex$\ast$} {\ttfamily \+\_\+vertex} Vertices de la escena \\
+\hline
+{\em 4} & {\ttfamily I\+D3\+D11\+Buffer$\ast$\&} {\ttfamily \+\_\+buffer} El buffer a usar en la carga de DirectX \\
+\hline
+{\em 5} & {\ttfamily C\+Device$\ast$} {\ttfamily \+\_\+\+\_\+dev} Device usado para gestion de recursos \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_buffer_aa2638416757112f7ae97e32798b9d8e3}\label{class_c_buffer_aa2638416757112f7ae97e32798b9d8e3}} 
+\index{CBuffer@{CBuffer}!createVertexBuffer@{createVertexBuffer}}
+\index{createVertexBuffer@{createVertexBuffer}!CBuffer@{CBuffer}}
+\doxysubsubsection{\texorpdfstring{createVertexBuffer()}{createVertexBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void C\+Buffer\+::create\+Vertex\+Buffer (\begin{DoxyParamCaption}\item[{int}]{\+\_\+numvertex,  }\item[{\mbox{\hyperlink{struct_simple_vertex}{Simple\+Vertex}} $\ast$}]{\+\_\+vertex,  }\item[{G\+Luint \&}]{\+\_\+buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Crea el buffer de vertices de Open\+GL. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily int} {\ttfamily \+\_\+numvertex} Es el numero de vertices \\
+\hline
+{\em 2} & {\ttfamily G\+Luint\&} {\ttfamily \+\_\+vertex} Son vertices \\
+\hline
+{\em 3} & {\ttfamily G\+Luint\&} {\ttfamily \+\_\+buffer} Buffer que va a almacenar de tipo Open\+GL \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_buffer_aeadc28328c4b962805dd621f6822bf8d}\label{class_c_buffer_aeadc28328c4b962805dd621f6822bf8d}} 
+\index{CBuffer@{CBuffer}!Delete@{Delete}}
+\index{Delete@{Delete}!CBuffer@{CBuffer}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily void C\+Buffer\+::\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Borra los datos de los Buffers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Ninguno} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_buffer_a41ceab80d5e0c5562c3cc38add0fc096}\label{class_c_buffer_a41ceab80d5e0c5562c3cc38add0fc096}} 
+\index{CBuffer@{CBuffer}!Init@{Init}}
+\index{Init@{Init}!CBuffer@{CBuffer}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void C\+Buffer\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_buffer_descriptor}{Buffer\+Descriptor}}}]{\+\_\+buff }\end{DoxyParamCaption})}
+
+
+
+Inicializa el buffer en base a su descriptor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily \mbox{\hyperlink{struct_buffer_descriptor}{Buffer\+Descriptor}}} {\ttfamily \+\_\+buff} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_buffer_a339b7776a624c51fe535f4a33045d8fa}\label{class_c_buffer_a339b7776a624c51fe535f4a33045d8fa}} 
+\index{CBuffer@{CBuffer}!OpenGLVAO@{OpenGLVAO}}
+\index{OpenGLVAO@{OpenGLVAO}!CBuffer@{CBuffer}}
+\doxysubsubsection{\texorpdfstring{OpenGLVAO()}{OpenGLVAO()}}
+{\footnotesize\ttfamily void C\+Buffer\+::\+Open\+G\+L\+V\+AO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Es una funcion que contiene uno o mas objetos de vertex vuffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Ninguno} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_buffer_ae46b18ecb75fedf658f89e17cef7274d}\label{class_c_buffer_ae46b18ecb75fedf658f89e17cef7274d}} 
+\index{CBuffer@{CBuffer}!Render@{Render}}
+\index{Render@{Render}!CBuffer@{CBuffer}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void C\+Buffer\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+No se utiliza. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Ninguno} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_buffer_a2add6f9fe11c28ede138394048ef56f1}\label{class_c_buffer_a2add6f9fe11c28ede138394048ef56f1}} 
+\index{CBuffer@{CBuffer}!Update@{Update}}
+\index{Update@{Update}!CBuffer@{CBuffer}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void C\+Buffer\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Actualiza los buffers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Ninguno} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_buffer_a029081f92cf909496ccd037994b0ed08}\label{class_c_buffer_a029081f92cf909496ccd037994b0ed08}} 
+\index{CBuffer@{CBuffer}!m\_BufferD3D11@{m\_BufferD3D11}}
+\index{m\_BufferD3D11@{m\_BufferD3D11}!CBuffer@{CBuffer}}
+\doxysubsubsection{\texorpdfstring{m\_BufferD3D11}{m\_BufferD3D11}}
+{\footnotesize\ttfamily I\+D3\+D11\+Buffer$\ast$ C\+Buffer\+::m\+\_\+\+Buffer\+D3\+D11}
+
+Buffer de Direct\+X11 \mbox{\Hypertarget{class_c_buffer_aab323d42b81d138b05cd0cab4496bb51}\label{class_c_buffer_aab323d42b81d138b05cd0cab4496bb51}} 
+\index{CBuffer@{CBuffer}!m\_BufferDescD3D11@{m\_BufferDescD3D11}}
+\index{m\_BufferDescD3D11@{m\_BufferDescD3D11}!CBuffer@{CBuffer}}
+\doxysubsubsection{\texorpdfstring{m\_BufferDescD3D11}{m\_BufferDescD3D11}}
+{\footnotesize\ttfamily D3\+D11\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+D\+E\+SC C\+Buffer\+::m\+\_\+\+Buffer\+Desc\+D3\+D11}
+
+Descripcion de del Buffer respectivo \mbox{\Hypertarget{class_c_buffer_a8a686e618415f061932129e4cb5a9514}\label{class_c_buffer_a8a686e618415f061932129e4cb5a9514}} 
+\index{CBuffer@{CBuffer}!m\_DescBuff@{m\_DescBuff}}
+\index{m\_DescBuff@{m\_DescBuff}!CBuffer@{CBuffer}}
+\doxysubsubsection{\texorpdfstring{m\_DescBuff}{m\_DescBuff}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_buffer_descriptor}{Buffer\+Descriptor}} C\+Buffer\+::m\+\_\+\+Desc\+Buff}
+
+Es un objeto con la estrucutra para facilitar su manipulacion \mbox{\Hypertarget{class_c_buffer_a6b21e042616e466f05ee677f6bc82e72}\label{class_c_buffer_a6b21e042616e466f05ee677f6bc82e72}} 
+\index{CBuffer@{CBuffer}!m\_elementbuffer@{m\_elementbuffer}}
+\index{m\_elementbuffer@{m\_elementbuffer}!CBuffer@{CBuffer}}
+\doxysubsubsection{\texorpdfstring{m\_elementbuffer}{m\_elementbuffer}}
+{\footnotesize\ttfamily G\+Luint C\+Buffer\+::m\+\_\+elementbuffer}
+
+Buffer de elemenos de Open\+GL \mbox{\Hypertarget{class_c_buffer_a4e68d071b556f2686d1936fc1762d2da}\label{class_c_buffer_a4e68d071b556f2686d1936fc1762d2da}} 
+\index{CBuffer@{CBuffer}!m\_ID@{m\_ID}}
+\index{m\_ID@{m\_ID}!CBuffer@{CBuffer}}
+\doxysubsubsection{\texorpdfstring{m\_ID}{m\_ID}}
+{\footnotesize\ttfamily G\+Luint C\+Buffer\+::m\+\_\+\+ID}
+
+El index buffer de Open\+GL \mbox{\Hypertarget{class_c_buffer_a92464595541f8a545bd2d2560effaa2b}\label{class_c_buffer_a92464595541f8a545bd2d2560effaa2b}} 
+\index{CBuffer@{CBuffer}!m\_vertexbuffer@{m\_vertexbuffer}}
+\index{m\_vertexbuffer@{m\_vertexbuffer}!CBuffer@{CBuffer}}
+\doxysubsubsection{\texorpdfstring{m\_vertexbuffer}{m\_vertexbuffer}}
+{\footnotesize\ttfamily G\+Luint C\+Buffer\+::m\+\_\+vertexbuffer}
+
+Vertex buffer de Open\+GL 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_buffer_8h}{C\+Buffer.\+h}}\end{DoxyCompactItemize}

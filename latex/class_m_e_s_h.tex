@@ -1,0 +1,499 @@
+\hypertarget{class_m_e_s_h}{}\doxysection{M\+E\+SH Class Reference}
+\label{class_m_e_s_h}\index{MESH@{MESH}}
+
+
+Clase mesh.  
+
+
+
+
+{\ttfamily \#include $<$Mesh.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_m_e_s_h_a62a933a507a739f8e2e436ea0540b9ff}\label{class_m_e_s_h_a62a933a507a739f8e2e436ea0540b9ff}} 
+void {\bfseries Update} ()
+\item 
+\mbox{\hyperlink{class_m_e_s_h_a7d7238d7465d349d4888914692b1bc3f}{M\+E\+SH}} ()
+\begin{DoxyCompactList}\small\item\em Constructor, establece todo las variables con puntero. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_e_s_h_a584904f1442ab2f952d8b7d4c589c711}{Init}} ()
+\begin{DoxyCompactList}\small\item\em Inicializa el mesh con sus respectivos buffers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_e_s_h_a5126583d042a3eab740e1c7c0f118808}{Render}} (\mbox{\hyperlink{class_c_device_context}{C\+Device\+Context}} $\ast$\+\_\+dev\+Cont, \mbox{\hyperlink{class_c_buffer}{C\+Buffer}} $\ast$\+\_\+buffer\+Data, \mbox{\hyperlink{class_c_device}{C\+Device}} $\ast$\+\_\+dev)
+\begin{DoxyCompactList}\small\item\em Funcion que renderiza los meshes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_e_s_h_a1a53b84a21603c9e36835eb0f64a1d8d}{Delete}} ()
+\begin{DoxyCompactList}\small\item\em Borra todos los recursos con puntero y los vuelve nulos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_e_s_h_ae76b8f01603a79fac7640d98b54ba4fe}{Add\+Children}} (\mbox{\hyperlink{class_m_e_s_h}{M\+E\+SH}} $\ast$\+\_\+new\+Child)
+\begin{DoxyCompactList}\small\item\em Añade meshes a el vector de meshes {\ttfamily m\+\_\+\+Children}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_e_s_h_ab137512605d6f0800b98b1d00826665e}{Set\+Parent}} (\mbox{\hyperlink{class_m_e_s_h}{M\+E\+SH}} $\ast$\+\_\+parent)
+\begin{DoxyCompactList}\small\item\em Establece la variable {\ttfamily m\+\_\+\+Parent} como el padre. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_e_s_h_a89182a53fe339205250e266208c6cb3a}{Set\+Vertex}} (\mbox{\hyperlink{struct_simple_vertex}{Simple\+Vertex}} $\ast$My\+Vertex, int num\+Vertex)
+\begin{DoxyCompactList}\small\item\em Set los vertices del modelo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_e_s_h_a7e43deb2b8bf2004193345948a13fbdf}{Set\+Index\+List}} (W\+O\+RD $\ast$\+\_\+index, int num\+Index)
+\begin{DoxyCompactList}\small\item\em Establece la lista de indices para la geometria. \end{DoxyCompactList}\item 
+W\+O\+RD $\ast$\& \mbox{\hyperlink{class_m_e_s_h_ae11620050ae3772d4c415d90a9969dfb}{Get\+Index\+List}} (\mbox{\hyperlink{struct_simple_vertex}{Simple\+Vertex}} $\ast$My\+Vertex, int num\+Vertex)
+\begin{DoxyCompactList}\small\item\em Obtiene la lista de Indices. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_simple_vertex}{Simple\+Vertex}} $\ast$ \mbox{\hyperlink{class_m_e_s_h_a259dbc6293edacfd6b540571c7b7ad3d}{Get\+Vertex}} ()
+\begin{DoxyCompactList}\small\item\em Getter de vertices. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_m_e_s_h_af039f61108b2dc77b4ac46934f29f52f}{Get\+Vertex\+Num}} ()
+\begin{DoxyCompactList}\small\item\em Getter de numero de vertices. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_m_e_s_h_a54c81f5eed9b2f128ad2bb7199dc26bb}{Get\+Index\+Num}} ()
+\begin{DoxyCompactList}\small\item\em Getter de numero de indices. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_buffer}{C\+Buffer}} $\ast$\& \mbox{\hyperlink{class_m_e_s_h_ad8b73b56b4ce5ef0bf4cb8f556068f16}{Get\+Vertex\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Getter de vertex buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_e_s_h_afe82a762824f7ce493c152c393cea773}{Set\+Vertex\+Buffer}} (I\+D3\+D11\+Buffer $\ast$\+\_\+p\+VertexB)
+\begin{DoxyCompactList}\small\item\em Setter de vetex buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_e_s_h_ab4246d94ba4d6ade3a56449a95621466}{Set\+Index\+Buffer}} (I\+D3\+D11\+Buffer $\ast$\+\_\+p\+IndexB)
+\begin{DoxyCompactList}\small\item\em Setter de index buffer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_buffer}{C\+Buffer}} $\ast$\& \mbox{\hyperlink{class_m_e_s_h_a192b52b36de950415b6c63a047d5691c}{Get\+Index\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Getter de indec buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_e_s_h_a60283293578dbb9810f5bd12006b3f27}{Set\+Scene\+ID}} (int ID)
+\begin{DoxyCompactList}\small\item\em Asigna un Id a la escena. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_m_e_s_h_a480a47c135504f65be4ace6196aff5c8}{Get\+Scene\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Getter de Id de escena. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_m_e_s_h_a425d016e3939de7c8849465585b2a744}{m\+\_\+\+Difuce\+Name}}
+\item 
+\mbox{\hyperlink{class_material_api}{Material\+Api}} $\ast$ \mbox{\hyperlink{class_m_e_s_h_a4edca0e397002f2c9b2cbe3f7b629641}{m\+\_\+\+Materials}}
+\item 
+\mbox{\hyperlink{class_m_e_s_h}{M\+E\+SH}} $\ast$ \mbox{\hyperlink{class_m_e_s_h_a2dbd627a3a7beb673bcc99c9da2a599f}{m\+\_\+\+Parent}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_m_e_s_h}{M\+E\+SH}} $\ast$ $>$ \mbox{\hyperlink{class_m_e_s_h_a55732cfb4f6b7e58b1df03d4698cd4fe}{m\+\_\+\+Children}}
+\item 
+\mbox{\Hypertarget{class_m_e_s_h_af80df3ef18d2eb5a415f1b657e1339fe}\label{class_m_e_s_h_af80df3ef18d2eb5a415f1b657e1339fe}} 
+glm\+::vec4 {\bfseries m\+\_\+\+Transform}
+\item 
+\mbox{\hyperlink{class_c_buffer}{C\+Buffer}} $\ast$ \mbox{\hyperlink{class_m_e_s_h_a4fd16a20c843747c25de43d8cd8c6a02}{m\+\_\+\+Vertex\+Buffer}} = nullptr
+\item 
+\mbox{\hyperlink{class_c_buffer}{C\+Buffer}} $\ast$ \mbox{\hyperlink{class_m_e_s_h_adfb1d9caa5dbd6e5f2d6cf297345029c}{m\+\_\+\+Index}} = nullptr
+\item 
+\mbox{\hyperlink{struct_simple_vertex}{Simple\+Vertex}} $\ast$ \mbox{\hyperlink{class_m_e_s_h_a754e63226b6dbab083bf573c7c8847b3}{m\+\_\+\+My\+Vertex}} = nullptr
+\item 
+W\+O\+RD $\ast$ \mbox{\hyperlink{class_m_e_s_h_a9d2d379bcf5a9429df6f64016e1f8a4a}{m\+\_\+\+My\+Index}} = nullptr
+\item 
+int \mbox{\hyperlink{class_m_e_s_h_a39b7f5bb80616dff075eecc55a3e1895}{m\+\_\+\+Vertex\+Num}} = 0
+\item 
+int \mbox{\hyperlink{class_m_e_s_h_a1131884ae2c0b04a101cb628495edb3c}{m\+\_\+\+Index\+Num}} = 0
+\item 
+int \mbox{\hyperlink{class_m_e_s_h_a75e6143d9c37ebd4aff10def803f9405}{m\+\_\+\+Scene\+Id}} = -\/1
+\item 
+\mbox{\hyperlink{struct_c_b_changes_every_frame}{C\+B\+Changes\+Every\+Frame}} \mbox{\hyperlink{class_m_e_s_h_a2e05b2e8fbab78c238d4bbdef8f4dadb}{m\+\_\+\+Mesh\+Data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase mesh. 
+
+En esta clase se usaran los recursos necesario para encadenar meshes en una escena 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_m_e_s_h_a7d7238d7465d349d4888914692b1bc3f}\label{class_m_e_s_h_a7d7238d7465d349d4888914692b1bc3f}} 
+\index{MESH@{MESH}!MESH@{MESH}}
+\index{MESH@{MESH}!MESH@{MESH}}
+\doxysubsubsection{\texorpdfstring{MESH()}{MESH()}}
+{\footnotesize\ttfamily M\+E\+S\+H\+::\+M\+E\+SH (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor, establece todo las variables con puntero. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_m_e_s_h_ae76b8f01603a79fac7640d98b54ba4fe}\label{class_m_e_s_h_ae76b8f01603a79fac7640d98b54ba4fe}} 
+\index{MESH@{MESH}!AddChildren@{AddChildren}}
+\index{AddChildren@{AddChildren}!MESH@{MESH}}
+\doxysubsubsection{\texorpdfstring{AddChildren()}{AddChildren()}}
+{\footnotesize\ttfamily void M\+E\+S\+H\+::\+Add\+Children (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_m_e_s_h}{M\+E\+SH}} $\ast$}]{\+\_\+new\+Child }\end{DoxyParamCaption})}
+
+
+
+Añade meshes a el vector de meshes {\ttfamily m\+\_\+\+Children}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily M\+E\+S\+H$\ast$} {\ttfamily \+\_\+new\+Child} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_e_s_h_a1a53b84a21603c9e36835eb0f64a1d8d}\label{class_m_e_s_h_a1a53b84a21603c9e36835eb0f64a1d8d}} 
+\index{MESH@{MESH}!Delete@{Delete}}
+\index{Delete@{Delete}!MESH@{MESH}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily void M\+E\+S\+H\+::\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Borra todos los recursos con puntero y los vuelve nulos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametras \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_e_s_h_a192b52b36de950415b6c63a047d5691c}\label{class_m_e_s_h_a192b52b36de950415b6c63a047d5691c}} 
+\index{MESH@{MESH}!GetIndexBuffer@{GetIndexBuffer}}
+\index{GetIndexBuffer@{GetIndexBuffer}!MESH@{MESH}}
+\doxysubsubsection{\texorpdfstring{GetIndexBuffer()}{GetIndexBuffer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_buffer}{C\+Buffer}}$\ast$\& M\+E\+S\+H\+::\+Get\+Index\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter de indec buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene paramentros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily C\+Buffer$\ast$} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_e_s_h_ae11620050ae3772d4c415d90a9969dfb}\label{class_m_e_s_h_ae11620050ae3772d4c415d90a9969dfb}} 
+\index{MESH@{MESH}!GetIndexList@{GetIndexList}}
+\index{GetIndexList@{GetIndexList}!MESH@{MESH}}
+\doxysubsubsection{\texorpdfstring{GetIndexList()}{GetIndexList()}}
+{\footnotesize\ttfamily W\+O\+RD$\ast$\& M\+E\+S\+H\+::\+Get\+Index\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_simple_vertex}{Simple\+Vertex}} $\ast$}]{My\+Vertex,  }\item[{int}]{num\+Vertex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene la lista de Indices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily Simple\+Vertex$\ast$} {\ttfamily Myvertex} \\
+\hline
+{\em 2} & {\ttfamily int} {\ttfamily num\+Vertex} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily W\+O\+R\+D$\ast$} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_e_s_h_a54c81f5eed9b2f128ad2bb7199dc26bb}\label{class_m_e_s_h_a54c81f5eed9b2f128ad2bb7199dc26bb}} 
+\index{MESH@{MESH}!GetIndexNum@{GetIndexNum}}
+\index{GetIndexNum@{GetIndexNum}!MESH@{MESH}}
+\doxysubsubsection{\texorpdfstring{GetIndexNum()}{GetIndexNum()}}
+{\footnotesize\ttfamily int M\+E\+S\+H\+::\+Get\+Index\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter de numero de indices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametro \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily int} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_e_s_h_a480a47c135504f65be4ace6196aff5c8}\label{class_m_e_s_h_a480a47c135504f65be4ace6196aff5c8}} 
+\index{MESH@{MESH}!GetSceneID@{GetSceneID}}
+\index{GetSceneID@{GetSceneID}!MESH@{MESH}}
+\doxysubsubsection{\texorpdfstring{GetSceneID()}{GetSceneID()}}
+{\footnotesize\ttfamily int M\+E\+S\+H\+::\+Get\+Scene\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter de Id de escena. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene Parametro \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily int} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_e_s_h_a259dbc6293edacfd6b540571c7b7ad3d}\label{class_m_e_s_h_a259dbc6293edacfd6b540571c7b7ad3d}} 
+\index{MESH@{MESH}!GetVertex@{GetVertex}}
+\index{GetVertex@{GetVertex}!MESH@{MESH}}
+\doxysubsubsection{\texorpdfstring{GetVertex()}{GetVertex()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_simple_vertex}{Simple\+Vertex}}$\ast$ M\+E\+S\+H\+::\+Get\+Vertex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter de vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily \mbox{\hyperlink{struct_simple_vertex}{Simple\+Vertex}}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_e_s_h_ad8b73b56b4ce5ef0bf4cb8f556068f16}\label{class_m_e_s_h_ad8b73b56b4ce5ef0bf4cb8f556068f16}} 
+\index{MESH@{MESH}!GetVertexBuffer@{GetVertexBuffer}}
+\index{GetVertexBuffer@{GetVertexBuffer}!MESH@{MESH}}
+\doxysubsubsection{\texorpdfstring{GetVertexBuffer()}{GetVertexBuffer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_buffer}{C\+Buffer}}$\ast$\& M\+E\+S\+H\+::\+Get\+Vertex\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter de vertex buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily C\+Buffer$\ast$} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_e_s_h_af039f61108b2dc77b4ac46934f29f52f}\label{class_m_e_s_h_af039f61108b2dc77b4ac46934f29f52f}} 
+\index{MESH@{MESH}!GetVertexNum@{GetVertexNum}}
+\index{GetVertexNum@{GetVertexNum}!MESH@{MESH}}
+\doxysubsubsection{\texorpdfstring{GetVertexNum()}{GetVertexNum()}}
+{\footnotesize\ttfamily int M\+E\+S\+H\+::\+Get\+Vertex\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter de numero de vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily int} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_e_s_h_a584904f1442ab2f952d8b7d4c589c711}\label{class_m_e_s_h_a584904f1442ab2f952d8b7d4c589c711}} 
+\index{MESH@{MESH}!Init@{Init}}
+\index{Init@{Init}!MESH@{MESH}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void M\+E\+S\+H\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Inicializa el mesh con sus respectivos buffers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_e_s_h_a5126583d042a3eab740e1c7c0f118808}\label{class_m_e_s_h_a5126583d042a3eab740e1c7c0f118808}} 
+\index{MESH@{MESH}!Render@{Render}}
+\index{Render@{Render}!MESH@{MESH}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void M\+E\+S\+H\+::\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_device_context}{C\+Device\+Context}} $\ast$}]{\+\_\+dev\+Cont,  }\item[{\mbox{\hyperlink{class_c_buffer}{C\+Buffer}} $\ast$}]{\+\_\+buffer\+Data,  }\item[{\mbox{\hyperlink{class_c_device}{C\+Device}} $\ast$}]{\+\_\+dev }\end{DoxyParamCaption})}
+
+
+
+Funcion que renderiza los meshes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily C\+Device\+Context$\ast$} {\ttfamily \+\_\+dev\+Cont} \\
+\hline
+{\em 2} & {\ttfamily C\+Buffer$\ast$} {\ttfamily \+\_\+buffer\+Data} \\
+\hline
+{\em 3} & {\ttfamily C\+Device$\ast$} {\ttfamily \+\_\+dev} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_e_s_h_ab4246d94ba4d6ade3a56449a95621466}\label{class_m_e_s_h_ab4246d94ba4d6ade3a56449a95621466}} 
+\index{MESH@{MESH}!SetIndexBuffer@{SetIndexBuffer}}
+\index{SetIndexBuffer@{SetIndexBuffer}!MESH@{MESH}}
+\doxysubsubsection{\texorpdfstring{SetIndexBuffer()}{SetIndexBuffer()}}
+{\footnotesize\ttfamily void M\+E\+S\+H\+::\+Set\+Index\+Buffer (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Buffer $\ast$}]{\+\_\+p\+IndexB }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Setter de index buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_m_e_s_h_a7e43deb2b8bf2004193345948a13fbdf}\label{class_m_e_s_h_a7e43deb2b8bf2004193345948a13fbdf}} 
+\index{MESH@{MESH}!SetIndexList@{SetIndexList}}
+\index{SetIndexList@{SetIndexList}!MESH@{MESH}}
+\doxysubsubsection{\texorpdfstring{SetIndexList()}{SetIndexList()}}
+{\footnotesize\ttfamily void M\+E\+S\+H\+::\+Set\+Index\+List (\begin{DoxyParamCaption}\item[{W\+O\+RD $\ast$}]{\+\_\+index,  }\item[{int}]{num\+Index }\end{DoxyParamCaption})}
+
+
+
+Establece la lista de indices para la geometria. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily W\+O\+R\+D$\ast$} {\ttfamily \+\_\+index} \\
+\hline
+{\em 2} & {\ttfamily int} {\ttfamily num\+Vertex} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_e_s_h_ab137512605d6f0800b98b1d00826665e}\label{class_m_e_s_h_ab137512605d6f0800b98b1d00826665e}} 
+\index{MESH@{MESH}!SetParent@{SetParent}}
+\index{SetParent@{SetParent}!MESH@{MESH}}
+\doxysubsubsection{\texorpdfstring{SetParent()}{SetParent()}}
+{\footnotesize\ttfamily void M\+E\+S\+H\+::\+Set\+Parent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_m_e_s_h}{M\+E\+SH}} $\ast$}]{\+\_\+parent }\end{DoxyParamCaption})}
+
+
+
+Establece la variable {\ttfamily m\+\_\+\+Parent} como el padre. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily M\+E\+S\+H$\ast$} {\ttfamily \+\_\+parent} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_e_s_h_a60283293578dbb9810f5bd12006b3f27}\label{class_m_e_s_h_a60283293578dbb9810f5bd12006b3f27}} 
+\index{MESH@{MESH}!SetSceneID@{SetSceneID}}
+\index{SetSceneID@{SetSceneID}!MESH@{MESH}}
+\doxysubsubsection{\texorpdfstring{SetSceneID()}{SetSceneID()}}
+{\footnotesize\ttfamily void M\+E\+S\+H\+::\+Set\+Scene\+ID (\begin{DoxyParamCaption}\item[{int}]{ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Asigna un Id a la escena. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_m_e_s_h_a89182a53fe339205250e266208c6cb3a}\label{class_m_e_s_h_a89182a53fe339205250e266208c6cb3a}} 
+\index{MESH@{MESH}!SetVertex@{SetVertex}}
+\index{SetVertex@{SetVertex}!MESH@{MESH}}
+\doxysubsubsection{\texorpdfstring{SetVertex()}{SetVertex()}}
+{\footnotesize\ttfamily void M\+E\+S\+H\+::\+Set\+Vertex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_simple_vertex}{Simple\+Vertex}} $\ast$}]{My\+Vertex,  }\item[{int}]{num\+Vertex }\end{DoxyParamCaption})}
+
+
+
+Set los vertices del modelo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily Simple\+Vertex$\ast$} {\ttfamily My\+Vertex} \\
+\hline
+{\em 2} & {\ttfamily int} {\ttfamily num\+Vertex} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_e_s_h_afe82a762824f7ce493c152c393cea773}\label{class_m_e_s_h_afe82a762824f7ce493c152c393cea773}} 
+\index{MESH@{MESH}!SetVertexBuffer@{SetVertexBuffer}}
+\index{SetVertexBuffer@{SetVertexBuffer}!MESH@{MESH}}
+\doxysubsubsection{\texorpdfstring{SetVertexBuffer()}{SetVertexBuffer()}}
+{\footnotesize\ttfamily void M\+E\+S\+H\+::\+Set\+Vertex\+Buffer (\begin{DoxyParamCaption}\item[{I\+D3\+D11\+Buffer $\ast$}]{\+\_\+p\+VertexB }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Setter de vetex buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_m_e_s_h_a55732cfb4f6b7e58b1df03d4698cd4fe}\label{class_m_e_s_h_a55732cfb4f6b7e58b1df03d4698cd4fe}} 
+\index{MESH@{MESH}!m\_Children@{m\_Children}}
+\index{m\_Children@{m\_Children}!MESH@{MESH}}
+\doxysubsubsection{\texorpdfstring{m\_Children}{m\_Children}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_m_e_s_h}{M\+E\+SH}}$\ast$$>$ M\+E\+S\+H\+::m\+\_\+\+Children}
+
+Meshes hijos \mbox{\Hypertarget{class_m_e_s_h_a425d016e3939de7c8849465585b2a744}\label{class_m_e_s_h_a425d016e3939de7c8849465585b2a744}} 
+\index{MESH@{MESH}!m\_DifuceName@{m\_DifuceName}}
+\index{m\_DifuceName@{m\_DifuceName}!MESH@{MESH}}
+\doxysubsubsection{\texorpdfstring{m\_DifuceName}{m\_DifuceName}}
+{\footnotesize\ttfamily std\+::string M\+E\+S\+H\+::m\+\_\+\+Difuce\+Name}
+
+Nombre del difuse \mbox{\Hypertarget{class_m_e_s_h_adfb1d9caa5dbd6e5f2d6cf297345029c}\label{class_m_e_s_h_adfb1d9caa5dbd6e5f2d6cf297345029c}} 
+\index{MESH@{MESH}!m\_Index@{m\_Index}}
+\index{m\_Index@{m\_Index}!MESH@{MESH}}
+\doxysubsubsection{\texorpdfstring{m\_Index}{m\_Index}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_buffer}{C\+Buffer}}$\ast$ M\+E\+S\+H\+::m\+\_\+\+Index = nullptr}
+
+Buffer de indices \mbox{\Hypertarget{class_m_e_s_h_a1131884ae2c0b04a101cb628495edb3c}\label{class_m_e_s_h_a1131884ae2c0b04a101cb628495edb3c}} 
+\index{MESH@{MESH}!m\_IndexNum@{m\_IndexNum}}
+\index{m\_IndexNum@{m\_IndexNum}!MESH@{MESH}}
+\doxysubsubsection{\texorpdfstring{m\_IndexNum}{m\_IndexNum}}
+{\footnotesize\ttfamily int M\+E\+S\+H\+::m\+\_\+\+Index\+Num = 0}
+
+Numero de indices \mbox{\Hypertarget{class_m_e_s_h_a4edca0e397002f2c9b2cbe3f7b629641}\label{class_m_e_s_h_a4edca0e397002f2c9b2cbe3f7b629641}} 
+\index{MESH@{MESH}!m\_Materials@{m\_Materials}}
+\index{m\_Materials@{m\_Materials}!MESH@{MESH}}
+\doxysubsubsection{\texorpdfstring{m\_Materials}{m\_Materials}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_material_api}{Material\+Api}}$\ast$ M\+E\+S\+H\+::m\+\_\+\+Materials}
+
+Material \mbox{\Hypertarget{class_m_e_s_h_a2e05b2e8fbab78c238d4bbdef8f4dadb}\label{class_m_e_s_h_a2e05b2e8fbab78c238d4bbdef8f4dadb}} 
+\index{MESH@{MESH}!m\_MeshData@{m\_MeshData}}
+\index{m\_MeshData@{m\_MeshData}!MESH@{MESH}}
+\doxysubsubsection{\texorpdfstring{m\_MeshData}{m\_MeshData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_b_changes_every_frame}{C\+B\+Changes\+Every\+Frame}} M\+E\+S\+H\+::m\+\_\+\+Mesh\+Data}
+
+Datos del mesh \mbox{\Hypertarget{class_m_e_s_h_a9d2d379bcf5a9429df6f64016e1f8a4a}\label{class_m_e_s_h_a9d2d379bcf5a9429df6f64016e1f8a4a}} 
+\index{MESH@{MESH}!m\_MyIndex@{m\_MyIndex}}
+\index{m\_MyIndex@{m\_MyIndex}!MESH@{MESH}}
+\doxysubsubsection{\texorpdfstring{m\_MyIndex}{m\_MyIndex}}
+{\footnotesize\ttfamily W\+O\+RD$\ast$ M\+E\+S\+H\+::m\+\_\+\+My\+Index = nullptr}
+
+Indices \mbox{\Hypertarget{class_m_e_s_h_a754e63226b6dbab083bf573c7c8847b3}\label{class_m_e_s_h_a754e63226b6dbab083bf573c7c8847b3}} 
+\index{MESH@{MESH}!m\_MyVertex@{m\_MyVertex}}
+\index{m\_MyVertex@{m\_MyVertex}!MESH@{MESH}}
+\doxysubsubsection{\texorpdfstring{m\_MyVertex}{m\_MyVertex}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_simple_vertex}{Simple\+Vertex}}$\ast$ M\+E\+S\+H\+::m\+\_\+\+My\+Vertex = nullptr}
+
+Vertices \mbox{\Hypertarget{class_m_e_s_h_a2dbd627a3a7beb673bcc99c9da2a599f}\label{class_m_e_s_h_a2dbd627a3a7beb673bcc99c9da2a599f}} 
+\index{MESH@{MESH}!m\_Parent@{m\_Parent}}
+\index{m\_Parent@{m\_Parent}!MESH@{MESH}}
+\doxysubsubsection{\texorpdfstring{m\_Parent}{m\_Parent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_m_e_s_h}{M\+E\+SH}}$\ast$ M\+E\+S\+H\+::m\+\_\+\+Parent}
+
+Mesh padre \mbox{\Hypertarget{class_m_e_s_h_a75e6143d9c37ebd4aff10def803f9405}\label{class_m_e_s_h_a75e6143d9c37ebd4aff10def803f9405}} 
+\index{MESH@{MESH}!m\_SceneId@{m\_SceneId}}
+\index{m\_SceneId@{m\_SceneId}!MESH@{MESH}}
+\doxysubsubsection{\texorpdfstring{m\_SceneId}{m\_SceneId}}
+{\footnotesize\ttfamily int M\+E\+S\+H\+::m\+\_\+\+Scene\+Id = -\/1}
+
+Numero de id de la escena \mbox{\Hypertarget{class_m_e_s_h_a4fd16a20c843747c25de43d8cd8c6a02}\label{class_m_e_s_h_a4fd16a20c843747c25de43d8cd8c6a02}} 
+\index{MESH@{MESH}!m\_VertexBuffer@{m\_VertexBuffer}}
+\index{m\_VertexBuffer@{m\_VertexBuffer}!MESH@{MESH}}
+\doxysubsubsection{\texorpdfstring{m\_VertexBuffer}{m\_VertexBuffer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_buffer}{C\+Buffer}}$\ast$ M\+E\+S\+H\+::m\+\_\+\+Vertex\+Buffer = nullptr}
+
+Buffer de vertices \mbox{\Hypertarget{class_m_e_s_h_a39b7f5bb80616dff075eecc55a3e1895}\label{class_m_e_s_h_a39b7f5bb80616dff075eecc55a3e1895}} 
+\index{MESH@{MESH}!m\_VertexNum@{m\_VertexNum}}
+\index{m\_VertexNum@{m\_VertexNum}!MESH@{MESH}}
+\doxysubsubsection{\texorpdfstring{m\_VertexNum}{m\_VertexNum}}
+{\footnotesize\ttfamily int M\+E\+S\+H\+::m\+\_\+\+Vertex\+Num = 0}
+
+Numero de vertices 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_mesh_8h}{Mesh.\+h}}\end{DoxyCompactItemize}

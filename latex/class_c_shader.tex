@@ -1,0 +1,145 @@
+\hypertarget{class_c_shader}{}\doxysection{C\+Shader Class Reference}
+\label{class_c_shader}\index{CShader@{CShader}}
+
+
+Clase de Shader.  
+
+
+
+
+{\ttfamily \#include $<$C\+Shader.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_shader_af87f11415616ac72ea03ca5e0b55360d}{C\+Shader}} ()
+\begin{DoxyCompactList}\small\item\em Constructor setea el blob a nulo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_shader_a9961296e74a4c5a16701811fa67840b5}{$\sim$\+C\+Shader}} ()
+\begin{DoxyCompactList}\small\item\em Destructor (Actualmente no esta en uso) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_shader_a51dd210cd7b30326bf69035d2ab4a573}{Init}} ()
+\begin{DoxyCompactList}\small\item\em Inicializa y lee shaders. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static G\+Luint \mbox{\hyperlink{class_c_shader_acba7e2e07acd91dfa2b571d6e2601102}{Load\+Shaders}} (const char $\ast$vertex\+\_\+file\+\_\+path, const char $\ast$fragment\+\_\+file\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Carga de shaders para Open\+GL. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+I\+D3\+D11\+Vertex\+Shader $\ast$ \mbox{\hyperlink{class_c_shader_a69a064ce8bf4997a3e3ed557ec949f5e}{g\+\_\+p\+Vertex\+Shader\+D3\+D11}}
+\item 
+I\+D3\+D\+Blob $\ast$ \mbox{\hyperlink{class_c_shader_a1cb81a0a0f56d3ff9e43ffad2d918a51}{m\+\_\+p\+V\+S\+Blob\+D3\+D11}}
+\item 
+I\+D3\+D11\+Input\+Layout $\ast$ \mbox{\hyperlink{class_c_shader_aa5f53b1be83870ac598de8301ae35670}{Layout\+D3\+D11}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase de Shader. 
+
+Descripcion con esta clase manejaremos los shader y tambien crearemos un inputlayout en base a eso 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_shader_af87f11415616ac72ea03ca5e0b55360d}\label{class_c_shader_af87f11415616ac72ea03ca5e0b55360d}} 
+\index{CShader@{CShader}!CShader@{CShader}}
+\index{CShader@{CShader}!CShader@{CShader}}
+\doxysubsubsection{\texorpdfstring{CShader()}{CShader()}}
+{\footnotesize\ttfamily C\+Shader\+::\+C\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor setea el blob a nulo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_shader_a9961296e74a4c5a16701811fa67840b5}\label{class_c_shader_a9961296e74a4c5a16701811fa67840b5}} 
+\index{CShader@{CShader}!````~CShader@{$\sim$CShader}}
+\index{````~CShader@{$\sim$CShader}!CShader@{CShader}}
+\doxysubsubsection{\texorpdfstring{$\sim$CShader()}{~CShader()}}
+{\footnotesize\ttfamily C\+Shader\+::$\sim$\+C\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destructor (Actualmente no esta en uso) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_shader_a51dd210cd7b30326bf69035d2ab4a573}\label{class_c_shader_a51dd210cd7b30326bf69035d2ab4a573}} 
+\index{CShader@{CShader}!Init@{Init}}
+\index{Init@{Init}!CShader@{CShader}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void C\+Shader\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Inicializa y lee shaders. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_shader_acba7e2e07acd91dfa2b571d6e2601102}\label{class_c_shader_acba7e2e07acd91dfa2b571d6e2601102}} 
+\index{CShader@{CShader}!LoadShaders@{LoadShaders}}
+\index{LoadShaders@{LoadShaders}!CShader@{CShader}}
+\doxysubsubsection{\texorpdfstring{LoadShaders()}{LoadShaders()}}
+{\footnotesize\ttfamily static G\+Luint C\+Shader\+::\+Load\+Shaders (\begin{DoxyParamCaption}\item[{const char $\ast$}]{vertex\+\_\+file\+\_\+path,  }\item[{const char $\ast$}]{fragment\+\_\+file\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Carga de shaders para Open\+GL. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily const} {\ttfamily char$\ast$} {\ttfamily vertex\+\_\+file\+\_\+path} \\
+\hline
+{\em 2} & {\ttfamily const} {\ttfamily char$\ast$} {\ttfamily fragment\+\_\+file\+\_\+path} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily G\+Luint} 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_shader_a69a064ce8bf4997a3e3ed557ec949f5e}\label{class_c_shader_a69a064ce8bf4997a3e3ed557ec949f5e}} 
+\index{CShader@{CShader}!g\_pVertexShaderD3D11@{g\_pVertexShaderD3D11}}
+\index{g\_pVertexShaderD3D11@{g\_pVertexShaderD3D11}!CShader@{CShader}}
+\doxysubsubsection{\texorpdfstring{g\_pVertexShaderD3D11}{g\_pVertexShaderD3D11}}
+{\footnotesize\ttfamily I\+D3\+D11\+Vertex\+Shader$\ast$ C\+Shader\+::g\+\_\+p\+Vertex\+Shader\+D3\+D11}
+
+Variable de tipo vertex shader de DirectX \mbox{\Hypertarget{class_c_shader_aa5f53b1be83870ac598de8301ae35670}\label{class_c_shader_aa5f53b1be83870ac598de8301ae35670}} 
+\index{CShader@{CShader}!LayoutD3D11@{LayoutD3D11}}
+\index{LayoutD3D11@{LayoutD3D11}!CShader@{CShader}}
+\doxysubsubsection{\texorpdfstring{LayoutD3D11}{LayoutD3D11}}
+{\footnotesize\ttfamily I\+D3\+D11\+Input\+Layout$\ast$ C\+Shader\+::\+Layout\+D3\+D11}
+
+Variable de tipo input layout de DirectX \mbox{\Hypertarget{class_c_shader_a1cb81a0a0f56d3ff9e43ffad2d918a51}\label{class_c_shader_a1cb81a0a0f56d3ff9e43ffad2d918a51}} 
+\index{CShader@{CShader}!m\_pVSBlobD3D11@{m\_pVSBlobD3D11}}
+\index{m\_pVSBlobD3D11@{m\_pVSBlobD3D11}!CShader@{CShader}}
+\doxysubsubsection{\texorpdfstring{m\_pVSBlobD3D11}{m\_pVSBlobD3D11}}
+{\footnotesize\ttfamily I\+D3\+D\+Blob$\ast$ C\+Shader\+::m\+\_\+p\+V\+S\+Blob\+D3\+D11}
+
+Variable de tipo Blob de DirectX 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_shader_8h}{C\+Shader.\+h}}\end{DoxyCompactItemize}

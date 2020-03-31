@@ -1,0 +1,188 @@
+\hypertarget{class_c_device}{}\doxysection{C\+Device Class Reference}
+\label{class_c_device}\index{CDevice@{CDevice}}
+
+
+\mbox{\hyperlink{class_c_device}{C\+Device}}\+: Clase de tipo device.  
+
+
+
+
+{\ttfamily \#include $<$C\+Device.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_device_a5cbbd61a7e35f6e61f276e9ffa77fbf6}{C\+Device}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_device_ae907463e4e03cd1034157888cb995710}{$\sim$\+C\+Device}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_device_a697d502a1272e363ecc89972c0237399}{Init}} (\mbox{\hyperlink{struct_device_descriptor}{Device\+Descriptor}} \+\_\+dev\+Desc)
+\begin{DoxyCompactList}\small\item\em Inicializador del device. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_device_af96e7724df41647c67d674905b750bcc}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Actualiza el device (actualmente no esta en uso) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_device_abefcf054e5d59e7a487c121eed6aa1c9}{Delete}} ()
+\begin{DoxyCompactList}\small\item\em Establece el device en nulo(actualmente no esta en uso) \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{class_c_device_ae063f1076179c8659fcba1aa13f62937}{Get\+Dev}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el device, se usa mas que nada para punteros void. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_device_descriptor}{Device\+Descriptor}} \mbox{\hyperlink{class_c_device_ae34681b39f1a7c86f56f33b4be5c7fd1}{m\+\_\+\+Desc\+Device}}
+\item 
+I\+D3\+D11\+Device $\ast$ \mbox{\hyperlink{class_c_device_aba92b6d254a8f8620d279c8f6aceef35}{g\+\_\+pd3d\+Device\+D3\+D11}}
+\item 
+D3\+D\+\_\+\+D\+R\+I\+V\+E\+R\+\_\+\+T\+Y\+PE \mbox{\hyperlink{class_c_device_aca4d692b84629df8efa99fec6696a4f1}{g\+\_\+driver\+Type\+D3\+D11}}
+\item 
+D3\+D\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+L\+E\+V\+EL \mbox{\hyperlink{class_c_device_afab2f64a8069f02475a6b5605ea84c87}{g\+\_\+feature\+Level\+D3\+D11}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_c_device}{C\+Device}}\+: Clase de tipo device. 
+
+Descripcion\+: Se encarga de crear recursos 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_device_a5cbbd61a7e35f6e61f276e9ffa77fbf6}\label{class_c_device_a5cbbd61a7e35f6e61f276e9ffa77fbf6}} 
+\index{CDevice@{CDevice}!CDevice@{CDevice}}
+\index{CDevice@{CDevice}!CDevice@{CDevice}}
+\doxysubsubsection{\texorpdfstring{CDevice()}{CDevice()}}
+{\footnotesize\ttfamily C\+Device\+::\+C\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_device_ae907463e4e03cd1034157888cb995710}\label{class_c_device_ae907463e4e03cd1034157888cb995710}} 
+\index{CDevice@{CDevice}!````~CDevice@{$\sim$CDevice}}
+\index{````~CDevice@{$\sim$CDevice}!CDevice@{CDevice}}
+\doxysubsubsection{\texorpdfstring{$\sim$CDevice()}{~CDevice()}}
+{\footnotesize\ttfamily C\+Device\+::$\sim$\+C\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_device_abefcf054e5d59e7a487c121eed6aa1c9}\label{class_c_device_abefcf054e5d59e7a487c121eed6aa1c9}} 
+\index{CDevice@{CDevice}!Delete@{Delete}}
+\index{Delete@{Delete}!CDevice@{CDevice}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily void C\+Device\+::\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Establece el device en nulo(actualmente no esta en uso) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_device_ae063f1076179c8659fcba1aa13f62937}\label{class_c_device_ae063f1076179c8659fcba1aa13f62937}} 
+\index{CDevice@{CDevice}!GetDev@{GetDev}}
+\index{GetDev@{GetDev}!CDevice@{CDevice}}
+\doxysubsubsection{\texorpdfstring{GetDev()}{GetDev()}}
+{\footnotesize\ttfamily void$\ast$ C\+Device\+::\+Get\+Dev (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtiene el device, se usa mas que nada para punteros void. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_device_a697d502a1272e363ecc89972c0237399}\label{class_c_device_a697d502a1272e363ecc89972c0237399}} 
+\index{CDevice@{CDevice}!Init@{Init}}
+\index{Init@{Init}!CDevice@{CDevice}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void C\+Device\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_device_descriptor}{Device\+Descriptor}}}]{\+\_\+dev\+Desc }\end{DoxyParamCaption})}
+
+
+
+Inicializador del device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily \mbox{\hyperlink{struct_device_descriptor}{Device\+Descriptor}}} {\ttfamily \+\_\+dev\+Desc} Miembro de tipo descriptor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_device_af96e7724df41647c67d674905b750bcc}\label{class_c_device_af96e7724df41647c67d674905b750bcc}} 
+\index{CDevice@{CDevice}!Update@{Update}}
+\index{Update@{Update}!CDevice@{CDevice}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void C\+Device\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Actualiza el device (actualmente no esta en uso) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_device_aca4d692b84629df8efa99fec6696a4f1}\label{class_c_device_aca4d692b84629df8efa99fec6696a4f1}} 
+\index{CDevice@{CDevice}!g\_driverTypeD3D11@{g\_driverTypeD3D11}}
+\index{g\_driverTypeD3D11@{g\_driverTypeD3D11}!CDevice@{CDevice}}
+\doxysubsubsection{\texorpdfstring{g\_driverTypeD3D11}{g\_driverTypeD3D11}}
+{\footnotesize\ttfamily D3\+D\+\_\+\+D\+R\+I\+V\+E\+R\+\_\+\+T\+Y\+PE C\+Device\+::g\+\_\+driver\+Type\+D3\+D11}
+
+Drivertype de tipo DirectX \mbox{\Hypertarget{class_c_device_afab2f64a8069f02475a6b5605ea84c87}\label{class_c_device_afab2f64a8069f02475a6b5605ea84c87}} 
+\index{CDevice@{CDevice}!g\_featureLevelD3D11@{g\_featureLevelD3D11}}
+\index{g\_featureLevelD3D11@{g\_featureLevelD3D11}!CDevice@{CDevice}}
+\doxysubsubsection{\texorpdfstring{g\_featureLevelD3D11}{g\_featureLevelD3D11}}
+{\footnotesize\ttfamily D3\+D\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+L\+E\+V\+EL C\+Device\+::g\+\_\+feature\+Level\+D3\+D11}
+
+Feature level de tipo DirectX \mbox{\Hypertarget{class_c_device_aba92b6d254a8f8620d279c8f6aceef35}\label{class_c_device_aba92b6d254a8f8620d279c8f6aceef35}} 
+\index{CDevice@{CDevice}!g\_pd3dDeviceD3D11@{g\_pd3dDeviceD3D11}}
+\index{g\_pd3dDeviceD3D11@{g\_pd3dDeviceD3D11}!CDevice@{CDevice}}
+\doxysubsubsection{\texorpdfstring{g\_pd3dDeviceD3D11}{g\_pd3dDeviceD3D11}}
+{\footnotesize\ttfamily I\+D3\+D11\+Device$\ast$ C\+Device\+::g\+\_\+pd3d\+Device\+D3\+D11}
+
+Device de tipo DirectX \mbox{\Hypertarget{class_c_device_ae34681b39f1a7c86f56f33b4be5c7fd1}\label{class_c_device_ae34681b39f1a7c86f56f33b4be5c7fd1}} 
+\index{CDevice@{CDevice}!m\_DescDevice@{m\_DescDevice}}
+\index{m\_DescDevice@{m\_DescDevice}!CDevice@{CDevice}}
+\doxysubsubsection{\texorpdfstring{m\_DescDevice}{m\_DescDevice}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_device_descriptor}{Device\+Descriptor}} C\+Device\+::m\+\_\+\+Desc\+Device}
+
+Estructura de descripcion para mejor manejo de datos 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_device_8h}{C\+Device.\+h}}\end{DoxyCompactItemize}

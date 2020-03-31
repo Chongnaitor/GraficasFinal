@@ -1,0 +1,146 @@
+\hypertarget{class_first_camera}{}\doxysection{First\+Camera Class Reference}
+\label{class_first_camera}\index{FirstCamera@{FirstCamera}}
+
+
+Clase \mbox{\hyperlink{class_first_camera}{First\+Camera}} para hacer una camara en primera persona en base la clase \mbox{\hyperlink{class_c_camera}{C\+Camera}}.  
+
+
+
+
+{\ttfamily \#include $<$First\+Camera.\+h$>$}
+
+Inheritance diagram for First\+Camera\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_first_camera}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_first_camera_a97eba4a5f770bcc9bcc4c3b3bf0b136c}{Mouse\+Rotation}} () override
+\begin{DoxyCompactList}\small\item\em Sobrescribimos la rotacion del mouse para que este limitado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_first_camera_a2d0dd854175fce06ff327311c75b5a77}{Update\+VM}} () override
+\begin{DoxyCompactList}\small\item\em Sobrescribimos la funcion de actualizacion de matriz de vista. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_first_camera_a989d35ad0db0d982f92e9fd93bc569a6}{Create\+View}} () override
+\begin{DoxyCompactList}\small\item\em Sobrescribimos como se actualiza la matriz de vista. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_first_camera_a182fdec0474056a6f5b3b6147f147d42}{Movement}} (W\+P\+A\+R\+AM w\+Param)
+\begin{DoxyCompactList}\small\item\em Sobreescribimos el movimiento de la camara. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_first_camera_ae9f5814082636a380ef90e0a1e3185fb}{get\+Pos}} ()
+\begin{DoxyCompactList}\small\item\em Obtenemos la posicion de la camara. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Clase \mbox{\hyperlink{class_first_camera}{First\+Camera}} para hacer una camara en primera persona en base la clase \mbox{\hyperlink{class_c_camera}{C\+Camera}}. 
+
+Descripcion 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_first_camera_a989d35ad0db0d982f92e9fd93bc569a6}\label{class_first_camera_a989d35ad0db0d982f92e9fd93bc569a6}} 
+\index{FirstCamera@{FirstCamera}!CreateView@{CreateView}}
+\index{CreateView@{CreateView}!FirstCamera@{FirstCamera}}
+\doxysubsubsection{\texorpdfstring{CreateView()}{CreateView()}}
+{\footnotesize\ttfamily void First\+Camera\+::\+Create\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sobrescribimos como se actualiza la matriz de vista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_camera_a9a4f8f2ae529d53e1dfc796c1102942c}{C\+Camera}}.
+
+\mbox{\Hypertarget{class_first_camera_ae9f5814082636a380ef90e0a1e3185fb}\label{class_first_camera_ae9f5814082636a380ef90e0a1e3185fb}} 
+\index{FirstCamera@{FirstCamera}!getPos@{getPos}}
+\index{getPos@{getPos}!FirstCamera@{FirstCamera}}
+\doxysubsubsection{\texorpdfstring{getPos()}{getPos()}}
+{\footnotesize\ttfamily glm\+::vec3 First\+Camera\+::get\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtenemos la posicion de la camara. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & recibe parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_first_camera_a97eba4a5f770bcc9bcc4c3b3bf0b136c}\label{class_first_camera_a97eba4a5f770bcc9bcc4c3b3bf0b136c}} 
+\index{FirstCamera@{FirstCamera}!MouseRotation@{MouseRotation}}
+\index{MouseRotation@{MouseRotation}!FirstCamera@{FirstCamera}}
+\doxysubsubsection{\texorpdfstring{MouseRotation()}{MouseRotation()}}
+{\footnotesize\ttfamily void First\+Camera\+::\+Mouse\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sobrescribimos la rotacion del mouse para que este limitado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene ningun parametro \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve ninguno valor 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_camera_ae661fea9e6b963d80afff10e174f1ec0}{C\+Camera}}.
+
+\mbox{\Hypertarget{class_first_camera_a182fdec0474056a6f5b3b6147f147d42}\label{class_first_camera_a182fdec0474056a6f5b3b6147f147d42}} 
+\index{FirstCamera@{FirstCamera}!Movement@{Movement}}
+\index{Movement@{Movement}!FirstCamera@{FirstCamera}}
+\doxysubsubsection{\texorpdfstring{Movement()}{Movement()}}
+{\footnotesize\ttfamily void First\+Camera\+::\+Movement (\begin{DoxyParamCaption}\item[{W\+P\+A\+R\+AM}]{w\+Param }\end{DoxyParamCaption})}
+
+
+
+Sobreescribimos el movimiento de la camara. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & recibe parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_first_camera_a2d0dd854175fce06ff327311c75b5a77}\label{class_first_camera_a2d0dd854175fce06ff327311c75b5a77}} 
+\index{FirstCamera@{FirstCamera}!UpdateVM@{UpdateVM}}
+\index{UpdateVM@{UpdateVM}!FirstCamera@{FirstCamera}}
+\doxysubsubsection{\texorpdfstring{UpdateVM()}{UpdateVM()}}
+{\footnotesize\ttfamily void First\+Camera\+::\+Update\+VM (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sobrescribimos la funcion de actualizacion de matriz de vista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_camera_a9193f41eee3e68f2811fcec419fa9133}{C\+Camera}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_first_camera_8h}{First\+Camera.\+h}}\end{DoxyCompactItemize}

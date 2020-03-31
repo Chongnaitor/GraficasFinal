@@ -1,0 +1,12 @@
+/** \mainpag CriEngine
+ *
+ * \section intro_sec Introduction
+ *
+ * Para cambiar de api solo se tiene que borrar el define del api que no quieres que se muestre.
+ *
+ * \section install_sec Como se debe ver 
+ *
+ * \image html OpenGL.png
+ *
+ * \image html DirectX.png
+ */

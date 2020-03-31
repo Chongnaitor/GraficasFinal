@@ -1,0 +1,156 @@
+\hypertarget{class_c_render_target}{}\doxysection{C\+Render\+Target Class Reference}
+\label{class_c_render_target}\index{CRenderTarget@{CRenderTarget}}
+
+
+Descriptor.  
+
+
+
+
+{\ttfamily \#include $<$C\+Render\+Target.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_render_target_a610d425b627073a3f40520338d815175}{C\+Render\+Target}} ()
+\begin{DoxyCompactList}\small\item\em Constructor (No esta en uso actualmente) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_render_target_a140f5687594cc589c8b22221c84e4fba}{$\sim$\+C\+Render\+Target}} ()
+\begin{DoxyCompactList}\small\item\em Destructor (Actualmente no esta en uso) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_render_target_a88eed545d3adbc3e7b2139e30b0798e2}{Init}} (\mbox{\hyperlink{struct_render_target_desc}{Render\+Target\+Desc}} \+\_\+rtd)
+\begin{DoxyCompactList}\small\item\em Inicializador del render target con una estructura. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_render_target_af75428cd214e4c085781a4923acc46ee}{Init\+Frame\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Crea un buffer para almacenar frames Open\+GL. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_render_target_desc}{Render\+Target\+Desc}} \mbox{\hyperlink{class_c_render_target_aa5df47487305c2999198beb341bcd444}{m\+\_\+\+Render\+T\+Desc}}
+\item 
+G\+Luint \mbox{\hyperlink{class_c_render_target_a486dde91efc9dc7f669d59bfbeff9418}{m\+\_\+\+Id\+Render\+Target}} = 0
+\item 
+bool \mbox{\hyperlink{class_c_render_target_aa0075c746d4026387ac4890fd7335ef8}{m\+\_\+initialize}} = false
+\item 
+I\+D3\+D11\+Texture2D $\ast$ \mbox{\hyperlink{class_c_render_target_a1938d55c17b9c5311a03cac186cec766}{g\+\_\+p\+Depth\+Stencil\+D3\+D11}}
+\item 
+D3\+D11\+\_\+\+T\+E\+X\+T\+U\+R\+E2\+D\+\_\+\+D\+E\+SC \mbox{\hyperlink{class_c_render_target_a06a31f3132a55fdecb8ed2729ef71bbe}{m\+\_\+\+Render\+T\+D3\+D11}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Descriptor. 
+
+Descripcion 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_render_target_a610d425b627073a3f40520338d815175}\label{class_c_render_target_a610d425b627073a3f40520338d815175}} 
+\index{CRenderTarget@{CRenderTarget}!CRenderTarget@{CRenderTarget}}
+\index{CRenderTarget@{CRenderTarget}!CRenderTarget@{CRenderTarget}}
+\doxysubsubsection{\texorpdfstring{CRenderTarget()}{CRenderTarget()}}
+{\footnotesize\ttfamily C\+Render\+Target\+::\+C\+Render\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor (No esta en uso actualmente) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_render_target_a140f5687594cc589c8b22221c84e4fba}\label{class_c_render_target_a140f5687594cc589c8b22221c84e4fba}} 
+\index{CRenderTarget@{CRenderTarget}!````~CRenderTarget@{$\sim$CRenderTarget}}
+\index{````~CRenderTarget@{$\sim$CRenderTarget}!CRenderTarget@{CRenderTarget}}
+\doxysubsubsection{\texorpdfstring{$\sim$CRenderTarget()}{~CRenderTarget()}}
+{\footnotesize\ttfamily C\+Render\+Target\+::$\sim$\+C\+Render\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destructor (Actualmente no esta en uso) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_render_target_a88eed545d3adbc3e7b2139e30b0798e2}\label{class_c_render_target_a88eed545d3adbc3e7b2139e30b0798e2}} 
+\index{CRenderTarget@{CRenderTarget}!Init@{Init}}
+\index{Init@{Init}!CRenderTarget@{CRenderTarget}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void C\+Render\+Target\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_render_target_desc}{Render\+Target\+Desc}}}]{\+\_\+rtd }\end{DoxyParamCaption})}
+
+
+
+Inicializador del render target con una estructura. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily \mbox{\hyperlink{struct_render_target_desc}{Render\+Target\+Desc}}} {\ttfamily \+\_\+rtd} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_render_target_af75428cd214e4c085781a4923acc46ee}\label{class_c_render_target_af75428cd214e4c085781a4923acc46ee}} 
+\index{CRenderTarget@{CRenderTarget}!InitFrameBuffer@{InitFrameBuffer}}
+\index{InitFrameBuffer@{InitFrameBuffer}!CRenderTarget@{CRenderTarget}}
+\doxysubsubsection{\texorpdfstring{InitFrameBuffer()}{InitFrameBuffer()}}
+{\footnotesize\ttfamily void C\+Render\+Target\+::\+Init\+Frame\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Crea un buffer para almacenar frames Open\+GL. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Mo devuelve nada 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_render_target_a1938d55c17b9c5311a03cac186cec766}\label{class_c_render_target_a1938d55c17b9c5311a03cac186cec766}} 
+\index{CRenderTarget@{CRenderTarget}!g\_pDepthStencilD3D11@{g\_pDepthStencilD3D11}}
+\index{g\_pDepthStencilD3D11@{g\_pDepthStencilD3D11}!CRenderTarget@{CRenderTarget}}
+\doxysubsubsection{\texorpdfstring{g\_pDepthStencilD3D11}{g\_pDepthStencilD3D11}}
+{\footnotesize\ttfamily I\+D3\+D11\+Texture2D$\ast$ C\+Render\+Target\+::g\+\_\+p\+Depth\+Stencil\+D3\+D11}
+
+Variables de tipo textura DirectX \mbox{\Hypertarget{class_c_render_target_a486dde91efc9dc7f669d59bfbeff9418}\label{class_c_render_target_a486dde91efc9dc7f669d59bfbeff9418}} 
+\index{CRenderTarget@{CRenderTarget}!m\_IdRenderTarget@{m\_IdRenderTarget}}
+\index{m\_IdRenderTarget@{m\_IdRenderTarget}!CRenderTarget@{CRenderTarget}}
+\doxysubsubsection{\texorpdfstring{m\_IdRenderTarget}{m\_IdRenderTarget}}
+{\footnotesize\ttfamily G\+Luint C\+Render\+Target\+::m\+\_\+\+Id\+Render\+Target = 0}
+
+Render target de tipo Open\+GL \mbox{\Hypertarget{class_c_render_target_aa0075c746d4026387ac4890fd7335ef8}\label{class_c_render_target_aa0075c746d4026387ac4890fd7335ef8}} 
+\index{CRenderTarget@{CRenderTarget}!m\_initialize@{m\_initialize}}
+\index{m\_initialize@{m\_initialize}!CRenderTarget@{CRenderTarget}}
+\doxysubsubsection{\texorpdfstring{m\_initialize}{m\_initialize}}
+{\footnotesize\ttfamily bool C\+Render\+Target\+::m\+\_\+initialize = false}
+
+Variable que determina cual A\+PI se esta usando \mbox{\Hypertarget{class_c_render_target_a06a31f3132a55fdecb8ed2729ef71bbe}\label{class_c_render_target_a06a31f3132a55fdecb8ed2729ef71bbe}} 
+\index{CRenderTarget@{CRenderTarget}!m\_RenderTD3D11@{m\_RenderTD3D11}}
+\index{m\_RenderTD3D11@{m\_RenderTD3D11}!CRenderTarget@{CRenderTarget}}
+\doxysubsubsection{\texorpdfstring{m\_RenderTD3D11}{m\_RenderTD3D11}}
+{\footnotesize\ttfamily D3\+D11\+\_\+\+T\+E\+X\+T\+U\+R\+E2\+D\+\_\+\+D\+E\+SC C\+Render\+Target\+::m\+\_\+\+Render\+T\+D3\+D11}
+
+Variable de tipo de descriptor de textura DirectX \mbox{\Hypertarget{class_c_render_target_aa5df47487305c2999198beb341bcd444}\label{class_c_render_target_aa5df47487305c2999198beb341bcd444}} 
+\index{CRenderTarget@{CRenderTarget}!m\_RenderTDesc@{m\_RenderTDesc}}
+\index{m\_RenderTDesc@{m\_RenderTDesc}!CRenderTarget@{CRenderTarget}}
+\doxysubsubsection{\texorpdfstring{m\_RenderTDesc}{m\_RenderTDesc}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_render_target_desc}{Render\+Target\+Desc}} C\+Render\+Target\+::m\+\_\+\+Render\+T\+Desc}
+
+$<$Variable de tipo descriptor para mejor manejo de la informacion 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_render_target_8h}{C\+Render\+Target.\+h}}\end{DoxyCompactItemize}

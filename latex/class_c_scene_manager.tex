@@ -1,0 +1,232 @@
+\hypertarget{class_c_scene_manager}{}\doxysection{C\+Scene\+Manager Class Reference}
+\label{class_c_scene_manager}\index{CSceneManager@{CSceneManager}}
+
+
+Clase de Scene\+Manager la cual administa todos nuestros modelos en escena.  
+
+
+
+
+{\ttfamily \#include $<$C\+Scene\+Manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_scene_manager_aac7331a7a92c7c0781a5e2358ec636a8}{C\+Scene\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Constructor(\+No esta en uso actualmente) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_scene_manager_a8f9bae5361fe27dd07f3f5a89e11354f}{$\sim$\+C\+Scene\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Destructor (Actualmente no esta en uso) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_scene_manager_a5672b91ae8638ef24227a855af38041e}{Add\+Mesh}} (\mbox{\hyperlink{class_m_e_s_h}{M\+E\+SH}} $\ast$new\+Mesh)
+\begin{DoxyCompactList}\small\item\em Añade meshes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_m_e_s_h}{M\+E\+SH}} $\ast$\& \mbox{\hyperlink{class_c_scene_manager_a5be4c5659a516952c86e69a046f1da21}{Get\+Mesh}} (int mesh\+ID)
+\begin{DoxyCompactList}\small\item\em Obtiene el mesh. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_scene_manager_af5300bb3c0e44013b45489f37697afb6}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Actualiza datos que se actualizan a su vez de forma recursiva. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_scene_manager_a444b61ef9e5423578393ca5683b2185f}{Render}} (\mbox{\hyperlink{class_c_device_context}{C\+Device\+Context}} $\ast$\+\_\+device\+Con, \mbox{\hyperlink{class_c_buffer}{C\+Buffer}} $\ast$\+\_\+buff, \mbox{\hyperlink{class_c_device}{C\+Device}} $\ast$\+\_\+dev)
+\begin{DoxyCompactList}\small\item\em Renderiza la escena. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_scene_manager_ab1bbaf29338381eb89e56852f113fcbf}{Shutdown}} ()
+\begin{DoxyCompactList}\small\item\em Se encarga de vaciar todo lo que se uso para liberacion de memoria. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_scene_manager_ae84e62da29255020b07becfc6158223c}{Init}} ()
+\begin{DoxyCompactList}\small\item\em Inicializa todos los datos necesarios. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_buffer}{C\+Buffer}} $\ast$ \mbox{\hyperlink{class_c_scene_manager_aad104ba965883f6824c507b9831a8de6}{mesh\+Data}}
+\item 
+G\+Luint \mbox{\hyperlink{class_c_scene_manager_ad3d34a4e5398c1897b8b141249fca168}{m\+\_\+\+Vertex\+Array\+ID}}
+\item 
+bool \mbox{\hyperlink{class_c_scene_manager_a45f541387ed26171e7a8b63e9a63b78a}{m\+\_\+initialize}} = false
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_m_e_s_h}{M\+E\+SH}} $\ast$ $>$ \mbox{\hyperlink{class_c_scene_manager_a7492b556174caff939428608ae216b08}{m\+\_\+\+Mesh\+In\+Scene}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase de Scene\+Manager la cual administa todos nuestros modelos en escena. 
+
+Descripcion Se encarga de la lectura de modelos de la escena 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_scene_manager_aac7331a7a92c7c0781a5e2358ec636a8}\label{class_c_scene_manager_aac7331a7a92c7c0781a5e2358ec636a8}} 
+\index{CSceneManager@{CSceneManager}!CSceneManager@{CSceneManager}}
+\index{CSceneManager@{CSceneManager}!CSceneManager@{CSceneManager}}
+\doxysubsubsection{\texorpdfstring{CSceneManager()}{CSceneManager()}}
+{\footnotesize\ttfamily C\+Scene\+Manager\+::\+C\+Scene\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor(\+No esta en uso actualmente) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_scene_manager_a8f9bae5361fe27dd07f3f5a89e11354f}\label{class_c_scene_manager_a8f9bae5361fe27dd07f3f5a89e11354f}} 
+\index{CSceneManager@{CSceneManager}!````~CSceneManager@{$\sim$CSceneManager}}
+\index{````~CSceneManager@{$\sim$CSceneManager}!CSceneManager@{CSceneManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$CSceneManager()}{~CSceneManager()}}
+{\footnotesize\ttfamily C\+Scene\+Manager\+::$\sim$\+C\+Scene\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor (Actualmente no esta en uso) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_scene_manager_a5672b91ae8638ef24227a855af38041e}\label{class_c_scene_manager_a5672b91ae8638ef24227a855af38041e}} 
+\index{CSceneManager@{CSceneManager}!AddMesh@{AddMesh}}
+\index{AddMesh@{AddMesh}!CSceneManager@{CSceneManager}}
+\doxysubsubsection{\texorpdfstring{AddMesh()}{AddMesh()}}
+{\footnotesize\ttfamily void C\+Scene\+Manager\+::\+Add\+Mesh (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_m_e_s_h}{M\+E\+SH}} $\ast$}]{new\+Mesh }\end{DoxyParamCaption})}
+
+
+
+Añade meshes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily M\+E\+S\+H$\ast$} {\ttfamily new\+Mesh} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_scene_manager_a5be4c5659a516952c86e69a046f1da21}\label{class_c_scene_manager_a5be4c5659a516952c86e69a046f1da21}} 
+\index{CSceneManager@{CSceneManager}!GetMesh@{GetMesh}}
+\index{GetMesh@{GetMesh}!CSceneManager@{CSceneManager}}
+\doxysubsubsection{\texorpdfstring{GetMesh()}{GetMesh()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_m_e_s_h}{M\+E\+SH}}$\ast$\& C\+Scene\+Manager\+::\+Get\+Mesh (\begin{DoxyParamCaption}\item[{int}]{mesh\+ID }\end{DoxyParamCaption})}
+
+
+
+Obtiene el mesh. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily int} {\ttfamily mesh\+ID} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily M\+E\+S\+H$\ast$} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_scene_manager_ae84e62da29255020b07becfc6158223c}\label{class_c_scene_manager_ae84e62da29255020b07becfc6158223c}} 
+\index{CSceneManager@{CSceneManager}!Init@{Init}}
+\index{Init@{Init}!CSceneManager@{CSceneManager}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void C\+Scene\+Manager\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Inicializa todos los datos necesarios. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_scene_manager_a444b61ef9e5423578393ca5683b2185f}\label{class_c_scene_manager_a444b61ef9e5423578393ca5683b2185f}} 
+\index{CSceneManager@{CSceneManager}!Render@{Render}}
+\index{Render@{Render}!CSceneManager@{CSceneManager}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void C\+Scene\+Manager\+::\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_device_context}{C\+Device\+Context}} $\ast$}]{\+\_\+device\+Con,  }\item[{\mbox{\hyperlink{class_c_buffer}{C\+Buffer}} $\ast$}]{\+\_\+buff,  }\item[{\mbox{\hyperlink{class_c_device}{C\+Device}} $\ast$}]{\+\_\+dev }\end{DoxyParamCaption})}
+
+
+
+Renderiza la escena. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily C\+Device\+Context$\ast$} {\ttfamily device\+Cont} Device context actual \\
+\hline
+{\em 2} & {\ttfamily C\+Buffer$\ast$} {\ttfamily \+\_\+buff} Buffer donde se almaceneran los datos \\
+\hline
+{\em 3} & {\ttfamily C\+Device$\ast$} {\ttfamily \+\_\+dev} Device actual \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_scene_manager_ab1bbaf29338381eb89e56852f113fcbf}\label{class_c_scene_manager_ab1bbaf29338381eb89e56852f113fcbf}} 
+\index{CSceneManager@{CSceneManager}!Shutdown@{Shutdown}}
+\index{Shutdown@{Shutdown}!CSceneManager@{CSceneManager}}
+\doxysubsubsection{\texorpdfstring{Shutdown()}{Shutdown()}}
+{\footnotesize\ttfamily void C\+Scene\+Manager\+::\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Se encarga de vaciar todo lo que se uso para liberacion de memoria. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_scene_manager_af5300bb3c0e44013b45489f37697afb6}\label{class_c_scene_manager_af5300bb3c0e44013b45489f37697afb6}} 
+\index{CSceneManager@{CSceneManager}!Update@{Update}}
+\index{Update@{Update}!CSceneManager@{CSceneManager}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void C\+Scene\+Manager\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Actualiza datos que se actualizan a su vez de forma recursiva. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No devuelve nada 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_scene_manager_a45f541387ed26171e7a8b63e9a63b78a}\label{class_c_scene_manager_a45f541387ed26171e7a8b63e9a63b78a}} 
+\index{CSceneManager@{CSceneManager}!m\_initialize@{m\_initialize}}
+\index{m\_initialize@{m\_initialize}!CSceneManager@{CSceneManager}}
+\doxysubsubsection{\texorpdfstring{m\_initialize}{m\_initialize}}
+{\footnotesize\ttfamily bool C\+Scene\+Manager\+::m\+\_\+initialize = false}
+
+Determina si se va a usar o no \mbox{\Hypertarget{class_c_scene_manager_a7492b556174caff939428608ae216b08}\label{class_c_scene_manager_a7492b556174caff939428608ae216b08}} 
+\index{CSceneManager@{CSceneManager}!m\_MeshInScene@{m\_MeshInScene}}
+\index{m\_MeshInScene@{m\_MeshInScene}!CSceneManager@{CSceneManager}}
+\doxysubsubsection{\texorpdfstring{m\_MeshInScene}{m\_MeshInScene}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_m_e_s_h}{M\+E\+SH}}$\ast$$>$ C\+Scene\+Manager\+::m\+\_\+\+Mesh\+In\+Scene}
+
+Arreglo de meshes usado en escena \mbox{\Hypertarget{class_c_scene_manager_ad3d34a4e5398c1897b8b141249fca168}\label{class_c_scene_manager_ad3d34a4e5398c1897b8b141249fca168}} 
+\index{CSceneManager@{CSceneManager}!m\_VertexArrayID@{m\_VertexArrayID}}
+\index{m\_VertexArrayID@{m\_VertexArrayID}!CSceneManager@{CSceneManager}}
+\doxysubsubsection{\texorpdfstring{m\_VertexArrayID}{m\_VertexArrayID}}
+{\footnotesize\ttfamily G\+Luint C\+Scene\+Manager\+::m\+\_\+\+Vertex\+Array\+ID}
+
+Arreglo de vertices de Open\+GL \mbox{\Hypertarget{class_c_scene_manager_aad104ba965883f6824c507b9831a8de6}\label{class_c_scene_manager_aad104ba965883f6824c507b9831a8de6}} 
+\index{CSceneManager@{CSceneManager}!meshData@{meshData}}
+\index{meshData@{meshData}!CSceneManager@{CSceneManager}}
+\doxysubsubsection{\texorpdfstring{meshData}{meshData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_buffer}{C\+Buffer}}$\ast$ C\+Scene\+Manager\+::mesh\+Data}
+
+Buffer en el que se guarden los datos del mesh 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_scene_manager_8h}{C\+Scene\+Manager.\+h}}\end{DoxyCompactItemize}

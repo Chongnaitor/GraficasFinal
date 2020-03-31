@@ -1,0 +1,1002 @@
+\hypertarget{class_c_camera}{}\doxysection{C\+Camera Class Reference}
+\label{class_c_camera}\index{CCamera@{CCamera}}
+
+
+Elementos necesarios para crear una camara.  
+
+
+
+
+{\ttfamily \#include $<$C\+Camera.\+h$>$}
+
+Inheritance diagram for C\+Camera\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_camera}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_c_camera_a531011b065d0f9bc67e588c7f2ce812e}{Init}} (\mbox{\hyperlink{struct_c_camera_descriptor}{C\+Camera\+Descriptor}} \+\_\+camera\+Desc)
+\begin{DoxyCompactList}\small\item\em Usa el descriptor que se pasa en el parametro para llenar el descriptor dentro de la clase. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_c_camera_a83567b6ff1f55228ae260b2fe0d131df}{Get\+M\+Up}} ()
+\begin{DoxyCompactList}\small\item\em Getter de Up de la camara. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_c_camera_a33c75489e0d44e158c5d57de96ef9c9f}{Get\+M\+Front}} ()
+\begin{DoxyCompactList}\small\item\em Getter de Front de la camara. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_c_camera_a0351149af22dcc8ae5459809e18fe4b9}{Get\+M\+Right}} ()
+\begin{DoxyCompactList}\small\item\em Getter de Right de la camara. \end{DoxyCompactList}\item 
+glm\+::mat4x4 \mbox{\hyperlink{class_c_camera_a375112887b05e5dd6b4bc7fd2204a2ac}{Get\+Projection}} ()
+\begin{DoxyCompactList}\small\item\em Getter de la matriz de proyeccion. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_camera_a6c90387c33863c03cc30b08a7652ed5f}{Set\+View}} (glm\+::mat4x4 \+\_\+view)
+\begin{DoxyCompactList}\small\item\em Setter de la matriz de vista. \end{DoxyCompactList}\item 
+glm\+::mat4x4 \mbox{\hyperlink{class_c_camera_a571f2547185b23e1ee45ef95055c38f1}{Get\+View}} ()
+\begin{DoxyCompactList}\small\item\em Getter de la matriz de vista. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_camera_a80daaa3e70a6e48d8a87d512644a6b13}{Set\+Widht}} (float \+\_\+widht)
+\begin{DoxyCompactList}\small\item\em Setter del width de la camera. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_c_camera_a5afa22416c865dea88202b9ad161e326}{Get\+Widht}} ()
+\begin{DoxyCompactList}\small\item\em Getter del width de la camrara. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_camera_ae2234d524426373c38aaf16eafdc0840}{Set\+Height}} (float \+\_\+height)
+\begin{DoxyCompactList}\small\item\em Setter del height de la camera. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_c_camera_a9b7150fa62b36a4ef9f225dd47d3ca30}{Get\+Height}} ()
+\begin{DoxyCompactList}\small\item\em Getter del height de la camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_camera_a803921601afdef616bb5764e0b6f291c}{Set\+Near}} (float \+\_\+near)
+\begin{DoxyCompactList}\small\item\em Setter del near de la camera. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_c_camera_acebd2ec0731103e0723820a3b8a13a2b}{Get\+Near}} ()
+\begin{DoxyCompactList}\small\item\em Getter del near de la camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_camera_a6562cdb4a6d2ee432463e6f1d7f2506b}{Set\+Far}} (float \+\_\+far)
+\begin{DoxyCompactList}\small\item\em Setter del far de la camera. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_c_camera_ad98db6938c8407097e887dee9e2c814a}{Get\+Far}} ()
+\begin{DoxyCompactList}\small\item\em Getter de Far de la camara. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_camera_abe5790fe493c54d3221cfff4b054110a}{Set\+FoV}} (float \+\_\+f\+Ov)
+\begin{DoxyCompactList}\small\item\em Setter del fov de la camera. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_c_camera_a80b9d813d1ad84081c1b6ac0062c9081}{Get\+FoV}} ()
+\begin{DoxyCompactList}\small\item\em Getter de fov de la camara. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_camera_aff52d3ea646e18018c135d148f64ddd7}{Set\+Eye}} (glm\+::vec3 \+\_\+vec3)
+\begin{DoxyCompactList}\small\item\em Setter del eye de la camera. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_c_camera_af1422b7af778fb2118896bbd67b6c301}{Get\+Eye}} ()
+\begin{DoxyCompactList}\small\item\em Getter de Eye de la camara. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_camera_aa40b85dbe28ce2736d54a74fc9f970db}{Set\+At}} (glm\+::vec3 \+\_\+vec3)
+\begin{DoxyCompactList}\small\item\em Setter del Look\+At de la camera. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_c_camera_ae0ffd8d4f50d216a6838ff4fb0e5f126}{Get\+At}} ()
+\begin{DoxyCompactList}\small\item\em Getter de Right de la camara. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_camera_a1576d01e69cb319658c8150094ac05b2}{Set\+Up}} (glm\+::vec3 \+\_\+vec3)
+\begin{DoxyCompactList}\small\item\em Setter del Up de la camera. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_c_camera_a589e0eaf943d23f2c9d9538806c36456}{Get\+Up}} ()
+\begin{DoxyCompactList}\small\item\em Getter de Up de la camara. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_camera_a9193f41eee3e68f2811fcec419fa9133}{Update\+VM}} ()
+\begin{DoxyCompactList}\small\item\em Actualiza la matriz de proyeccion y es virtual para que otras camaras le hagan override. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_camera_a08822d695a6b3eacce865d55e76c1ad4}{Generate\+Projection\+Matrix}} ()
+\begin{DoxyCompactList}\small\item\em Genera la matriz de proyeccion. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_camera_a9a4f8f2ae529d53e1dfc796c1102942c}{Create\+View}} ()
+\begin{DoxyCompactList}\small\item\em Crea matriz de vista vista y es virtual para que otras camaras hagan override. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_camera_a926dcc9f80e533c22842b84b0536663f}{Move}} (W\+P\+A\+R\+AM \+\_\+param)
+\begin{DoxyCompactList}\small\item\em Sirve para mover la camara con inputs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_camera_a7b166b10c42020d933356b9244ef4aa2}{PitchX}} (W\+P\+A\+R\+AM \+\_\+param)
+\begin{DoxyCompactList}\small\item\em Sirve para rotar la camara con inputs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_camera_a1e654dd2b0d843b0b30f211e0cf8a9ab}{YawZ}} (W\+P\+A\+R\+AM \+\_\+param)
+\begin{DoxyCompactList}\small\item\em Sirve para rotar la camara con inputs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_camera_aa3e2bc40f4880859ad098f84cd336b7d}{RollY}} (W\+P\+A\+R\+AM \+\_\+param)
+\begin{DoxyCompactList}\small\item\em Sirve para rotar la camara con inputs. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_camera_ae661fea9e6b963d80afff10e174f1ec0}{Mouse\+Rotation}} ()
+\begin{DoxyCompactList}\small\item\em Sirve para rotar la camara con el mouse. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_camera_ae7c987bcfe1910170e432bf789fc99f0}{Set\+Original\+Mouse\+Pos}} (float \+\_\+x, float \+\_\+y)
+\begin{DoxyCompactList}\small\item\em Setter de la posicion anterior del mouse en click. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_camera_ac2fb30b46dcdf31d2e58114bb8f61bb3}{inputs}} (W\+P\+A\+R\+AM \+\_\+param)
+\begin{DoxyCompactList}\small\item\em Llama a todas las funciones de inputs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_camera_a4cc69719168095967e836287aad82eb7}{Input}} (int \+\_\+param)
+\begin{DoxyCompactList}\small\item\em Llama a todas las funciones de inputs para Open\+GL. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_camera_a2e041291c6369e94889b3c47f7639c48}{Move}} (int \+\_\+param)
+\begin{DoxyCompactList}\small\item\em Sirve para mover la camara con inputs Open\+GL. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_camera_a7a8dab9fe37e6d5ee4e6b3534e23671b}{PitchX}} (int \+\_\+param)
+\begin{DoxyCompactList}\small\item\em Sirve para rotar la camara con inputs Open\+GL. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_camera_a4b79c6523acc9f357d8fe0d401adb7c6}{YawZ}} (int \+\_\+param)
+\begin{DoxyCompactList}\small\item\em Sirve para rotar la camara con inputs Open\+GL. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_camera_a2db2ff11ecb5aac0c42d827ceb999ef6}{RollY}} (int \+\_\+param)
+\begin{DoxyCompactList}\small\item\em Sirve para rotar la camara con inputs Open\+GL. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_camera_a2eb95595766a84cb745ec00783595190}{C\+Camera}} ()
+\begin{DoxyCompactList}\small\item\em Sirve para rotar la camara con inputs Open\+GL. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+glm\+::vec2 \mbox{\hyperlink{class_c_camera_a7667e6438a9d62c51c691f73143e7cf5}{Original\+Mouse\+Pos}}
+\item 
+\mbox{\hyperlink{class_c_buffer}{C\+Buffer}} \mbox{\hyperlink{class_c_camera_a8a5b36480d2e13adbc8d19bcb6e83406}{g\+\_\+p\+C\+B\+Never\+Changes\+Camera}}
+\item 
+\mbox{\hyperlink{class_c_buffer}{C\+Buffer}} \mbox{\hyperlink{class_c_camera_a7c12821593c6f8b6bf7528bfa92b9961}{g\+\_\+p\+C\+B\+Change\+On\+Resize\+Camera}}
+\item 
+\mbox{\hyperlink{class_c_buffer}{C\+Buffer}} \mbox{\hyperlink{class_c_camera_acd2d8f0d43475866ae79ff0071f99694}{g\+\_\+p\+C\+B\+Changes\+Every\+Frame\+Camera}}
+\item 
+bool \mbox{\hyperlink{class_c_camera_ae0de7b0d688a926e08da21ac52dcdf4d}{m\+Click\+Pressed}} = false
+\item 
+glm\+::mat4x4 \mbox{\hyperlink{class_c_camera_a36c9b6d0a054d851010567027319ad50}{m\+View}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_c_camera_descriptor}{C\+Camera\+Descriptor}} \mbox{\hyperlink{class_c_camera_a2ea48cbe8acf9207ba878b0e60f90e0f}{m\+Desc}}
+\item 
+glm\+::vec3 \mbox{\hyperlink{class_c_camera_a211b609abf6d22c1fa22f159c7bcc387}{m\+Up}}
+\item 
+glm\+::vec3 \mbox{\hyperlink{class_c_camera_ae9a8ae1dea654bb4539cbc15cc6ab356}{m\+Front}}
+\item 
+glm\+::vec3 \mbox{\hyperlink{class_c_camera_ae256e665e11714970282cbd6a4233cd7}{m\+Right}}
+\item 
+glm\+::vec3 \mbox{\hyperlink{class_c_camera_a7cbeb03565688d3c743cb103b9ae2a3c}{original\+Eye}}
+\item 
+glm\+::vec3 \mbox{\hyperlink{class_c_camera_a36102da5a5883a9b00a032c002101e48}{Original\+Up}}
+\item 
+glm\+::vec3 \mbox{\hyperlink{class_c_camera_a8bdba8c5474df68fce1051c436d8ec2e}{Original\+At}}
+\item 
+glm\+::vec3 \mbox{\hyperlink{class_c_camera_ae6138a2867d898bf16fe7955a49aa347}{m\+Up\+Limit}}
+\item 
+glm\+::mat4x4 \mbox{\hyperlink{class_c_camera_a88c55b7891665829bdaf840904de64ce}{m\+Projection}}
+\item 
+glm\+::mat4x4 \mbox{\hyperlink{class_c_camera_af713056cf5a6704d55d5e4ad62dd1234}{m\+Axis}}
+\item 
+glm\+::mat4x4 \mbox{\hyperlink{class_c_camera_a186e6afeecdbaaa3f0f9b25389cd9bbe}{m\+Position}}
+\item 
+\mbox{\Hypertarget{class_c_camera_a92f64bbb36fb3aefbf9879069c9215d6}\label{class_c_camera_a92f64bbb36fb3aefbf9879069c9215d6}} 
+X\+M\+M\+A\+T\+R\+IX {\bfseries m\+M\+Projection}
+\item 
+float \mbox{\hyperlink{class_c_camera_a4088ccdbc99ae610c8d7f5d144495df8}{angule}}
+\item 
+float \mbox{\hyperlink{class_c_camera_ac5fac362255207bd2dc37edad790e8be}{max\+Angule}} = 60
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Elementos necesarios para crear una camara. 
+
+Creamos la clase, en base a esta se hara las demas camaras. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_camera_a2eb95595766a84cb745ec00783595190}\label{class_c_camera_a2eb95595766a84cb745ec00783595190}} 
+\index{CCamera@{CCamera}!CCamera@{CCamera}}
+\index{CCamera@{CCamera}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{CCamera()}{CCamera()}}
+{\footnotesize\ttfamily C\+Camera\+::\+C\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sirve para rotar la camara con inputs Open\+GL. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily int} {\ttfamily \+\_\+param} parametro de tipo windows \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No regresa nada
+\end{DoxyReturn}
+Constructor, estblece todo en 0 
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No regresa nada 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_camera_a9a4f8f2ae529d53e1dfc796c1102942c}\label{class_c_camera_a9a4f8f2ae529d53e1dfc796c1102942c}} 
+\index{CCamera@{CCamera}!CreateView@{CreateView}}
+\index{CreateView@{CreateView}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{CreateView()}{CreateView()}}
+{\footnotesize\ttfamily virtual void C\+Camera\+::\+Create\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Crea matriz de vista vista y es virtual para que otras camaras hagan override. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No regresa nada 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_first_camera_a989d35ad0db0d982f92e9fd93bc569a6}{First\+Camera}}.
+
+\mbox{\Hypertarget{class_c_camera_a08822d695a6b3eacce865d55e76c1ad4}\label{class_c_camera_a08822d695a6b3eacce865d55e76c1ad4}} 
+\index{CCamera@{CCamera}!GenerateProjectionMatrix@{GenerateProjectionMatrix}}
+\index{GenerateProjectionMatrix@{GenerateProjectionMatrix}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{GenerateProjectionMatrix()}{GenerateProjectionMatrix()}}
+{\footnotesize\ttfamily void C\+Camera\+::\+Generate\+Projection\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Genera la matriz de proyeccion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No regresa nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_camera_ae0ffd8d4f50d216a6838ff4fb0e5f126}\label{class_c_camera_ae0ffd8d4f50d216a6838ff4fb0e5f126}} 
+\index{CCamera@{CCamera}!GetAt@{GetAt}}
+\index{GetAt@{GetAt}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{GetAt()}{GetAt()}}
+{\footnotesize\ttfamily glm\+::vec3 C\+Camera\+::\+Get\+At (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter de Right de la camara. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily glm\+::vec3} {\ttfamily Look\+At} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_camera_af1422b7af778fb2118896bbd67b6c301}\label{class_c_camera_af1422b7af778fb2118896bbd67b6c301}} 
+\index{CCamera@{CCamera}!GetEye@{GetEye}}
+\index{GetEye@{GetEye}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{GetEye()}{GetEye()}}
+{\footnotesize\ttfamily glm\+::vec3 C\+Camera\+::\+Get\+Eye (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter de Eye de la camara. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily glm\+::vec3} {\ttfamily eye} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_camera_ad98db6938c8407097e887dee9e2c814a}\label{class_c_camera_ad98db6938c8407097e887dee9e2c814a}} 
+\index{CCamera@{CCamera}!GetFar@{GetFar}}
+\index{GetFar@{GetFar}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{GetFar()}{GetFar()}}
+{\footnotesize\ttfamily float C\+Camera\+::\+Get\+Far (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter de Far de la camara. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily float} {\ttfamily far} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_camera_a80b9d813d1ad84081c1b6ac0062c9081}\label{class_c_camera_a80b9d813d1ad84081c1b6ac0062c9081}} 
+\index{CCamera@{CCamera}!GetFoV@{GetFoV}}
+\index{GetFoV@{GetFoV}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{GetFoV()}{GetFoV()}}
+{\footnotesize\ttfamily float C\+Camera\+::\+Get\+FoV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter de fov de la camara. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily glm\+::vec3} {\ttfamily fov} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_camera_a9b7150fa62b36a4ef9f225dd47d3ca30}\label{class_c_camera_a9b7150fa62b36a4ef9f225dd47d3ca30}} 
+\index{CCamera@{CCamera}!GetHeight@{GetHeight}}
+\index{GetHeight@{GetHeight}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{GetHeight()}{GetHeight()}}
+{\footnotesize\ttfamily float C\+Camera\+::\+Get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter del height de la camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Regresa {\ttfamily float} {\ttfamily \+\_\+heihgt} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_camera_a33c75489e0d44e158c5d57de96ef9c9f}\label{class_c_camera_a33c75489e0d44e158c5d57de96ef9c9f}} 
+\index{CCamera@{CCamera}!GetMFront@{GetMFront}}
+\index{GetMFront@{GetMFront}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{GetMFront()}{GetMFront()}}
+{\footnotesize\ttfamily glm\+::vec3 C\+Camera\+::\+Get\+M\+Front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter de Front de la camara. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily glm\+::vec3} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_camera_a0351149af22dcc8ae5459809e18fe4b9}\label{class_c_camera_a0351149af22dcc8ae5459809e18fe4b9}} 
+\index{CCamera@{CCamera}!GetMRight@{GetMRight}}
+\index{GetMRight@{GetMRight}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{GetMRight()}{GetMRight()}}
+{\footnotesize\ttfamily glm\+::vec3 C\+Camera\+::\+Get\+M\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter de Right de la camara. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily glm\+::vec3} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_camera_a83567b6ff1f55228ae260b2fe0d131df}\label{class_c_camera_a83567b6ff1f55228ae260b2fe0d131df}} 
+\index{CCamera@{CCamera}!GetMUp@{GetMUp}}
+\index{GetMUp@{GetMUp}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{GetMUp()}{GetMUp()}}
+{\footnotesize\ttfamily glm\+::vec3 C\+Camera\+::\+Get\+M\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter de Up de la camara. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily glm\+::vec3} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_camera_acebd2ec0731103e0723820a3b8a13a2b}\label{class_c_camera_acebd2ec0731103e0723820a3b8a13a2b}} 
+\index{CCamera@{CCamera}!GetNear@{GetNear}}
+\index{GetNear@{GetNear}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{GetNear()}{GetNear()}}
+{\footnotesize\ttfamily float C\+Camera\+::\+Get\+Near (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter del near de la camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Regresa {\ttfamily float} {\ttfamily \+\_\+near} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_camera_a375112887b05e5dd6b4bc7fd2204a2ac}\label{class_c_camera_a375112887b05e5dd6b4bc7fd2204a2ac}} 
+\index{CCamera@{CCamera}!GetProjection@{GetProjection}}
+\index{GetProjection@{GetProjection}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{GetProjection()}{GetProjection()}}
+{\footnotesize\ttfamily glm\+::mat4x4 C\+Camera\+::\+Get\+Projection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter de la matriz de proyeccion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily glm\+::mat4x4} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_camera_a589e0eaf943d23f2c9d9538806c36456}\label{class_c_camera_a589e0eaf943d23f2c9d9538806c36456}} 
+\index{CCamera@{CCamera}!GetUp@{GetUp}}
+\index{GetUp@{GetUp}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{GetUp()}{GetUp()}}
+{\footnotesize\ttfamily glm\+::vec3 C\+Camera\+::\+Get\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter de Up de la camara. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily glm\+::vec3} {\ttfamily Up} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_camera_a571f2547185b23e1ee45ef95055c38f1}\label{class_c_camera_a571f2547185b23e1ee45ef95055c38f1}} 
+\index{CCamera@{CCamera}!GetView@{GetView}}
+\index{GetView@{GetView}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{GetView()}{GetView()}}
+{\footnotesize\ttfamily glm\+::mat4x4 C\+Camera\+::\+Get\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter de la matriz de vista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene paramtros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Regresa una matriz de vista {\ttfamily glm\+::mat4x4} {\ttfamily m\+View} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_camera_a5afa22416c865dea88202b9ad161e326}\label{class_c_camera_a5afa22416c865dea88202b9ad161e326}} 
+\index{CCamera@{CCamera}!GetWidht@{GetWidht}}
+\index{GetWidht@{GetWidht}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{GetWidht()}{GetWidht()}}
+{\footnotesize\ttfamily float C\+Camera\+::\+Get\+Widht (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter del width de la camrara. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene paramtros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Regresa el width de la camara {\ttfamily float} {\ttfamily m\+Width} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_camera_a531011b065d0f9bc67e588c7f2ce812e}\label{class_c_camera_a531011b065d0f9bc67e588c7f2ce812e}} 
+\index{CCamera@{CCamera}!Init@{Init}}
+\index{Init@{Init}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily int C\+Camera\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_camera_descriptor}{C\+Camera\+Descriptor}}}]{\+\_\+camera\+Desc }\end{DoxyParamCaption})}
+
+
+
+Usa el descriptor que se pasa en el parametro para llenar el descriptor dentro de la clase. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily \+\_\+\+\_\+camera\+Desc} Usa un descriptor de tipo {\ttfamily \mbox{\hyperlink{struct_c_camera_descriptor}{C\+Camera\+Descriptor}}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily int} es retornado para saber en que condicion se inicializo la camara. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_camera_a4cc69719168095967e836287aad82eb7}\label{class_c_camera_a4cc69719168095967e836287aad82eb7}} 
+\index{CCamera@{CCamera}!Input@{Input}}
+\index{Input@{Input}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{Input()}{Input()}}
+{\footnotesize\ttfamily void C\+Camera\+::\+Input (\begin{DoxyParamCaption}\item[{int}]{\+\_\+param }\end{DoxyParamCaption})}
+
+
+
+Llama a todas las funciones de inputs para Open\+GL. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily int} {\ttfamily \+\_\+param} parametro de tipo windows \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No regresa nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_camera_ac2fb30b46dcdf31d2e58114bb8f61bb3}\label{class_c_camera_ac2fb30b46dcdf31d2e58114bb8f61bb3}} 
+\index{CCamera@{CCamera}!inputs@{inputs}}
+\index{inputs@{inputs}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{inputs()}{inputs()}}
+{\footnotesize\ttfamily void C\+Camera\+::inputs (\begin{DoxyParamCaption}\item[{W\+P\+A\+R\+AM}]{\+\_\+param }\end{DoxyParamCaption})}
+
+
+
+Llama a todas las funciones de inputs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily W\+P\+A\+R\+AM} {\ttfamily \+\_\+param} parametro de tipo windows \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No regresa nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_camera_ae661fea9e6b963d80afff10e174f1ec0}\label{class_c_camera_ae661fea9e6b963d80afff10e174f1ec0}} 
+\index{CCamera@{CCamera}!MouseRotation@{MouseRotation}}
+\index{MouseRotation@{MouseRotation}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{MouseRotation()}{MouseRotation()}}
+{\footnotesize\ttfamily virtual void C\+Camera\+::\+Mouse\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sirve para rotar la camara con el mouse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily W\+P\+A\+R\+AM} {\ttfamily \+\_\+param} parametro de tipo windows \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No regresa nada 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_first_camera_a97eba4a5f770bcc9bcc4c3b3bf0b136c}{First\+Camera}}.
+
+\mbox{\Hypertarget{class_c_camera_a2e041291c6369e94889b3c47f7639c48}\label{class_c_camera_a2e041291c6369e94889b3c47f7639c48}} 
+\index{CCamera@{CCamera}!Move@{Move}}
+\index{Move@{Move}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void C\+Camera\+::\+Move (\begin{DoxyParamCaption}\item[{int}]{\+\_\+param }\end{DoxyParamCaption})}
+
+
+
+Sirve para mover la camara con inputs Open\+GL. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily int} {\ttfamily \+\_\+param} parametro de tipo windows \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No regresa nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_camera_a926dcc9f80e533c22842b84b0536663f}\label{class_c_camera_a926dcc9f80e533c22842b84b0536663f}} 
+\index{CCamera@{CCamera}!Move@{Move}}
+\index{Move@{Move}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void C\+Camera\+::\+Move (\begin{DoxyParamCaption}\item[{W\+P\+A\+R\+AM}]{\+\_\+param }\end{DoxyParamCaption})}
+
+
+
+Sirve para mover la camara con inputs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily W\+P\+A\+R\+AM} {\ttfamily \+\_\+param} parametro de tipo windows \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No regresa a nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_camera_a7a8dab9fe37e6d5ee4e6b3534e23671b}\label{class_c_camera_a7a8dab9fe37e6d5ee4e6b3534e23671b}} 
+\index{CCamera@{CCamera}!PitchX@{PitchX}}
+\index{PitchX@{PitchX}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{PitchX()}{PitchX()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void C\+Camera\+::\+PitchX (\begin{DoxyParamCaption}\item[{int}]{\+\_\+param }\end{DoxyParamCaption})}
+
+
+
+Sirve para rotar la camara con inputs Open\+GL. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily int} {\ttfamily \+\_\+param} parametro de tipo windows \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No regresa nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_camera_a7b166b10c42020d933356b9244ef4aa2}\label{class_c_camera_a7b166b10c42020d933356b9244ef4aa2}} 
+\index{CCamera@{CCamera}!PitchX@{PitchX}}
+\index{PitchX@{PitchX}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{PitchX()}{PitchX()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void C\+Camera\+::\+PitchX (\begin{DoxyParamCaption}\item[{W\+P\+A\+R\+AM}]{\+\_\+param }\end{DoxyParamCaption})}
+
+
+
+Sirve para rotar la camara con inputs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily W\+P\+A\+R\+AM} {\ttfamily \+\_\+param} parametro de tipo windows \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No regresa nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_camera_a2db2ff11ecb5aac0c42d827ceb999ef6}\label{class_c_camera_a2db2ff11ecb5aac0c42d827ceb999ef6}} 
+\index{CCamera@{CCamera}!RollY@{RollY}}
+\index{RollY@{RollY}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{RollY()}{RollY()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void C\+Camera\+::\+RollY (\begin{DoxyParamCaption}\item[{int}]{\+\_\+param }\end{DoxyParamCaption})}
+
+
+
+Sirve para rotar la camara con inputs Open\+GL. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily int} {\ttfamily \+\_\+param} parametro de tipo windows \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No regresa nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_camera_aa3e2bc40f4880859ad098f84cd336b7d}\label{class_c_camera_aa3e2bc40f4880859ad098f84cd336b7d}} 
+\index{CCamera@{CCamera}!RollY@{RollY}}
+\index{RollY@{RollY}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{RollY()}{RollY()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void C\+Camera\+::\+RollY (\begin{DoxyParamCaption}\item[{W\+P\+A\+R\+AM}]{\+\_\+param }\end{DoxyParamCaption})}
+
+
+
+Sirve para rotar la camara con inputs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily W\+P\+A\+R\+AM} {\ttfamily \+\_\+param} parametro de tipo windows \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No regresa nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_camera_aa40b85dbe28ce2736d54a74fc9f970db}\label{class_c_camera_aa40b85dbe28ce2736d54a74fc9f970db}} 
+\index{CCamera@{CCamera}!SetAt@{SetAt}}
+\index{SetAt@{SetAt}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{SetAt()}{SetAt()}}
+{\footnotesize\ttfamily void C\+Camera\+::\+Set\+At (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{\+\_\+vec3 }\end{DoxyParamCaption})}
+
+
+
+Setter del Look\+At de la camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene parametros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Regresa nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_camera_aff52d3ea646e18018c135d148f64ddd7}\label{class_c_camera_aff52d3ea646e18018c135d148f64ddd7}} 
+\index{CCamera@{CCamera}!SetEye@{SetEye}}
+\index{SetEye@{SetEye}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{SetEye()}{SetEye()}}
+{\footnotesize\ttfamily void C\+Camera\+::\+Set\+Eye (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{\+\_\+vec3 }\end{DoxyParamCaption})}
+
+
+
+Setter del eye de la camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily glm\+::vec3} {\ttfamily \+\_\+vec3} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No regresa nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_camera_a6562cdb4a6d2ee432463e6f1d7f2506b}\label{class_c_camera_a6562cdb4a6d2ee432463e6f1d7f2506b}} 
+\index{CCamera@{CCamera}!SetFar@{SetFar}}
+\index{SetFar@{SetFar}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{SetFar()}{SetFar()}}
+{\footnotesize\ttfamily void C\+Camera\+::\+Set\+Far (\begin{DoxyParamCaption}\item[{float}]{\+\_\+far }\end{DoxyParamCaption})}
+
+
+
+Setter del far de la camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily float} {\ttfamily \+\_\+far} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No regresa nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_camera_abe5790fe493c54d3221cfff4b054110a}\label{class_c_camera_abe5790fe493c54d3221cfff4b054110a}} 
+\index{CCamera@{CCamera}!SetFoV@{SetFoV}}
+\index{SetFoV@{SetFoV}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{SetFoV()}{SetFoV()}}
+{\footnotesize\ttfamily void C\+Camera\+::\+Set\+FoV (\begin{DoxyParamCaption}\item[{float}]{\+\_\+f\+Ov }\end{DoxyParamCaption})}
+
+
+
+Setter del fov de la camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily float} {\ttfamily {\itshape f\+Ov}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No regresa nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_camera_ae2234d524426373c38aaf16eafdc0840}\label{class_c_camera_ae2234d524426373c38aaf16eafdc0840}} 
+\index{CCamera@{CCamera}!SetHeight@{SetHeight}}
+\index{SetHeight@{SetHeight}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{SetHeight()}{SetHeight()}}
+{\footnotesize\ttfamily void C\+Camera\+::\+Set\+Height (\begin{DoxyParamCaption}\item[{float}]{\+\_\+height }\end{DoxyParamCaption})}
+
+
+
+Setter del height de la camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily float} {\ttfamily \+\_\+height} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Regresa nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_camera_a803921601afdef616bb5764e0b6f291c}\label{class_c_camera_a803921601afdef616bb5764e0b6f291c}} 
+\index{CCamera@{CCamera}!SetNear@{SetNear}}
+\index{SetNear@{SetNear}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{SetNear()}{SetNear()}}
+{\footnotesize\ttfamily void C\+Camera\+::\+Set\+Near (\begin{DoxyParamCaption}\item[{float}]{\+\_\+near }\end{DoxyParamCaption})}
+
+
+
+Setter del near de la camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily float} {\ttfamily \+\_\+near} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Regresa {\ttfamily float} {\ttfamily \+\_\+near} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_camera_ae7c987bcfe1910170e432bf789fc99f0}\label{class_c_camera_ae7c987bcfe1910170e432bf789fc99f0}} 
+\index{CCamera@{CCamera}!SetOriginalMousePos@{SetOriginalMousePos}}
+\index{SetOriginalMousePos@{SetOriginalMousePos}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{SetOriginalMousePos()}{SetOriginalMousePos()}}
+{\footnotesize\ttfamily void C\+Camera\+::\+Set\+Original\+Mouse\+Pos (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x,  }\item[{float}]{\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Setter de la posicion anterior del mouse en click. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily float} {\ttfamily \+\_\+x} \\
+\hline
+{\em 2} & {\ttfamily float} {\ttfamily \+\_\+y} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No regresa nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_camera_a1576d01e69cb319658c8150094ac05b2}\label{class_c_camera_a1576d01e69cb319658c8150094ac05b2}} 
+\index{CCamera@{CCamera}!SetUp@{SetUp}}
+\index{SetUp@{SetUp}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{SetUp()}{SetUp()}}
+{\footnotesize\ttfamily void C\+Camera\+::\+Set\+Up (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{\+\_\+vec3 }\end{DoxyParamCaption})}
+
+
+
+Setter del Up de la camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily glm\+::vec3} {\ttfamily \+\_\+vec3} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No regresa nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_camera_a6c90387c33863c03cc30b08a7652ed5f}\label{class_c_camera_a6c90387c33863c03cc30b08a7652ed5f}} 
+\index{CCamera@{CCamera}!SetView@{SetView}}
+\index{SetView@{SetView}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{SetView()}{SetView()}}
+{\footnotesize\ttfamily void C\+Camera\+::\+Set\+View (\begin{DoxyParamCaption}\item[{glm\+::mat4x4}]{\+\_\+view }\end{DoxyParamCaption})}
+
+
+
+Setter de la matriz de vista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily glm\+::mat4x4} {\ttfamily \+\_\+view} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No regresa nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_camera_a80daaa3e70a6e48d8a87d512644a6b13}\label{class_c_camera_a80daaa3e70a6e48d8a87d512644a6b13}} 
+\index{CCamera@{CCamera}!SetWidht@{SetWidht}}
+\index{SetWidht@{SetWidht}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{SetWidht()}{SetWidht()}}
+{\footnotesize\ttfamily void C\+Camera\+::\+Set\+Widht (\begin{DoxyParamCaption}\item[{float}]{\+\_\+widht }\end{DoxyParamCaption})}
+
+
+
+Setter del width de la camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily float} {\ttfamily \+\_\+\+Width} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Regresa nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_camera_a9193f41eee3e68f2811fcec419fa9133}\label{class_c_camera_a9193f41eee3e68f2811fcec419fa9133}} 
+\index{CCamera@{CCamera}!UpdateVM@{UpdateVM}}
+\index{UpdateVM@{UpdateVM}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{UpdateVM()}{UpdateVM()}}
+{\footnotesize\ttfamily virtual void C\+Camera\+::\+Update\+VM (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Actualiza la matriz de proyeccion y es virtual para que otras camaras le hagan override. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em No} & tiene para metros \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No returnea nada 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_first_camera_a2d0dd854175fce06ff327311c75b5a77}{First\+Camera}}.
+
+\mbox{\Hypertarget{class_c_camera_a4b79c6523acc9f357d8fe0d401adb7c6}\label{class_c_camera_a4b79c6523acc9f357d8fe0d401adb7c6}} 
+\index{CCamera@{CCamera}!YawZ@{YawZ}}
+\index{YawZ@{YawZ}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{YawZ()}{YawZ()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void C\+Camera\+::\+YawZ (\begin{DoxyParamCaption}\item[{int}]{\+\_\+param }\end{DoxyParamCaption})}
+
+
+
+Sirve para rotar la camara con inputs Open\+GL. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily int} {\ttfamily \+\_\+param} parametro de tipo windows \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No regresa nada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_camera_a1e654dd2b0d843b0b30f211e0cf8a9ab}\label{class_c_camera_a1e654dd2b0d843b0b30f211e0cf8a9ab}} 
+\index{CCamera@{CCamera}!YawZ@{YawZ}}
+\index{YawZ@{YawZ}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{YawZ()}{YawZ()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void C\+Camera\+::\+YawZ (\begin{DoxyParamCaption}\item[{W\+P\+A\+R\+AM}]{\+\_\+param }\end{DoxyParamCaption})}
+
+
+
+Sirve para rotar la camara con inputs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & {\ttfamily W\+P\+A\+R\+AM} {\ttfamily \+\_\+param} parametro de tipo windows \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+No regresa nada 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_camera_a4088ccdbc99ae610c8d7f5d144495df8}\label{class_c_camera_a4088ccdbc99ae610c8d7f5d144495df8}} 
+\index{CCamera@{CCamera}!angule@{angule}}
+\index{angule@{angule}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{angule}{angule}}
+{\footnotesize\ttfamily float C\+Camera\+::angule\hspace{0.3cm}{\ttfamily [protected]}}
+
+Angulo normal de rotacion de la camara \mbox{\Hypertarget{class_c_camera_a7c12821593c6f8b6bf7528bfa92b9961}\label{class_c_camera_a7c12821593c6f8b6bf7528bfa92b9961}} 
+\index{CCamera@{CCamera}!g\_pCBChangeOnResizeCamera@{g\_pCBChangeOnResizeCamera}}
+\index{g\_pCBChangeOnResizeCamera@{g\_pCBChangeOnResizeCamera}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{g\_pCBChangeOnResizeCamera}{g\_pCBChangeOnResizeCamera}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_buffer}{C\+Buffer}} C\+Camera\+::g\+\_\+p\+C\+B\+Change\+On\+Resize\+Camera}
+
+Buffer necesario para funcionamiento de la camara \mbox{\Hypertarget{class_c_camera_acd2d8f0d43475866ae79ff0071f99694}\label{class_c_camera_acd2d8f0d43475866ae79ff0071f99694}} 
+\index{CCamera@{CCamera}!g\_pCBChangesEveryFrameCamera@{g\_pCBChangesEveryFrameCamera}}
+\index{g\_pCBChangesEveryFrameCamera@{g\_pCBChangesEveryFrameCamera}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{g\_pCBChangesEveryFrameCamera}{g\_pCBChangesEveryFrameCamera}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_buffer}{C\+Buffer}} C\+Camera\+::g\+\_\+p\+C\+B\+Changes\+Every\+Frame\+Camera}
+
+Buffer necesario para funcionamiento de la camara \mbox{\Hypertarget{class_c_camera_a8a5b36480d2e13adbc8d19bcb6e83406}\label{class_c_camera_a8a5b36480d2e13adbc8d19bcb6e83406}} 
+\index{CCamera@{CCamera}!g\_pCBNeverChangesCamera@{g\_pCBNeverChangesCamera}}
+\index{g\_pCBNeverChangesCamera@{g\_pCBNeverChangesCamera}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{g\_pCBNeverChangesCamera}{g\_pCBNeverChangesCamera}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_buffer}{C\+Buffer}} C\+Camera\+::g\+\_\+p\+C\+B\+Never\+Changes\+Camera}
+
+Se penso en la inclusion de los buffer en la camara para el uso mas casteos void Buffer neceasario para funcionamento de la camara \mbox{\Hypertarget{class_c_camera_ac5fac362255207bd2dc37edad790e8be}\label{class_c_camera_ac5fac362255207bd2dc37edad790e8be}} 
+\index{CCamera@{CCamera}!maxAngule@{maxAngule}}
+\index{maxAngule@{maxAngule}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{maxAngule}{maxAngule}}
+{\footnotesize\ttfamily float C\+Camera\+::max\+Angule = 60\hspace{0.3cm}{\ttfamily [protected]}}
+
+Angulo maximo al que puede rotar la camara \mbox{\Hypertarget{class_c_camera_af713056cf5a6704d55d5e4ad62dd1234}\label{class_c_camera_af713056cf5a6704d55d5e4ad62dd1234}} 
+\index{CCamera@{CCamera}!mAxis@{mAxis}}
+\index{mAxis@{mAxis}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{mAxis}{mAxis}}
+{\footnotesize\ttfamily glm\+::mat4x4 C\+Camera\+::m\+Axis\hspace{0.3cm}{\ttfamily [protected]}}
+
+Matriz de vista \mbox{\Hypertarget{class_c_camera_ae0de7b0d688a926e08da21ac52dcdf4d}\label{class_c_camera_ae0de7b0d688a926e08da21ac52dcdf4d}} 
+\index{CCamera@{CCamera}!mClickPressed@{mClickPressed}}
+\index{mClickPressed@{mClickPressed}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{mClickPressed}{mClickPressed}}
+{\footnotesize\ttfamily bool C\+Camera\+::m\+Click\+Pressed = false}
+
+Comprueba si el boton del cursor esta siendo presionado \mbox{\Hypertarget{class_c_camera_a2ea48cbe8acf9207ba878b0e60f90e0f}\label{class_c_camera_a2ea48cbe8acf9207ba878b0e60f90e0f}} 
+\index{CCamera@{CCamera}!mDesc@{mDesc}}
+\index{mDesc@{mDesc}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{mDesc}{mDesc}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_camera_descriptor}{C\+Camera\+Descriptor}} C\+Camera\+::m\+Desc\hspace{0.3cm}{\ttfamily [protected]}}
+
+Miembro de tipo descriptor para que se va a usar para retencion de datos \mbox{\Hypertarget{class_c_camera_ae9a8ae1dea654bb4539cbc15cc6ab356}\label{class_c_camera_ae9a8ae1dea654bb4539cbc15cc6ab356}} 
+\index{CCamera@{CCamera}!mFront@{mFront}}
+\index{mFront@{mFront}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{mFront}{mFront}}
+{\footnotesize\ttfamily glm\+::vec3 C\+Camera\+::m\+Front\hspace{0.3cm}{\ttfamily [protected]}}
+
+Vector neceario para el funcionamiento de la camara \mbox{\Hypertarget{class_c_camera_a186e6afeecdbaaa3f0f9b25389cd9bbe}\label{class_c_camera_a186e6afeecdbaaa3f0f9b25389cd9bbe}} 
+\index{CCamera@{CCamera}!mPosition@{mPosition}}
+\index{mPosition@{mPosition}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{mPosition}{mPosition}}
+{\footnotesize\ttfamily glm\+::mat4x4 C\+Camera\+::m\+Position\hspace{0.3cm}{\ttfamily [protected]}}
+
+Matriz de posicion basada en la posicion del mundo \mbox{\Hypertarget{class_c_camera_a88c55b7891665829bdaf840904de64ce}\label{class_c_camera_a88c55b7891665829bdaf840904de64ce}} 
+\index{CCamera@{CCamera}!mProjection@{mProjection}}
+\index{mProjection@{mProjection}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{mProjection}{mProjection}}
+{\footnotesize\ttfamily glm\+::mat4x4 C\+Camera\+::m\+Projection\hspace{0.3cm}{\ttfamily [protected]}}
+
+Matriz de proyeccion \mbox{\Hypertarget{class_c_camera_ae256e665e11714970282cbd6a4233cd7}\label{class_c_camera_ae256e665e11714970282cbd6a4233cd7}} 
+\index{CCamera@{CCamera}!mRight@{mRight}}
+\index{mRight@{mRight}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{mRight}{mRight}}
+{\footnotesize\ttfamily glm\+::vec3 C\+Camera\+::m\+Right\hspace{0.3cm}{\ttfamily [protected]}}
+
+Vector neceario para el funcionamiento de la camara \mbox{\Hypertarget{class_c_camera_a211b609abf6d22c1fa22f159c7bcc387}\label{class_c_camera_a211b609abf6d22c1fa22f159c7bcc387}} 
+\index{CCamera@{CCamera}!mUp@{mUp}}
+\index{mUp@{mUp}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{mUp}{mUp}}
+{\footnotesize\ttfamily glm\+::vec3 C\+Camera\+::m\+Up\hspace{0.3cm}{\ttfamily [protected]}}
+
+Vector neceario para el funcionamiento de la camara \mbox{\Hypertarget{class_c_camera_ae6138a2867d898bf16fe7955a49aa347}\label{class_c_camera_ae6138a2867d898bf16fe7955a49aa347}} 
+\index{CCamera@{CCamera}!mUpLimit@{mUpLimit}}
+\index{mUpLimit@{mUpLimit}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{mUpLimit}{mUpLimit}}
+{\footnotesize\ttfamily glm\+::vec3 C\+Camera\+::m\+Up\+Limit\hspace{0.3cm}{\ttfamily [protected]}}
+
+Vector neceario para el funcionamiento de la camara, limintando que tan arriba se puede rotar \mbox{\Hypertarget{class_c_camera_a36c9b6d0a054d851010567027319ad50}\label{class_c_camera_a36c9b6d0a054d851010567027319ad50}} 
+\index{CCamera@{CCamera}!mView@{mView}}
+\index{mView@{mView}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{mView}{mView}}
+{\footnotesize\ttfamily glm\+::mat4x4 C\+Camera\+::m\+View}
+
+Matriz de vista \mbox{\Hypertarget{class_c_camera_a8bdba8c5474df68fce1051c436d8ec2e}\label{class_c_camera_a8bdba8c5474df68fce1051c436d8ec2e}} 
+\index{CCamera@{CCamera}!OriginalAt@{OriginalAt}}
+\index{OriginalAt@{OriginalAt}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{OriginalAt}{OriginalAt}}
+{\footnotesize\ttfamily glm\+::vec3 C\+Camera\+::\+Original\+At\hspace{0.3cm}{\ttfamily [protected]}}
+
+Vector neceario para el funcionamiento de la camara, haciendo referencia a una posicion anterior \mbox{\Hypertarget{class_c_camera_a7cbeb03565688d3c743cb103b9ae2a3c}\label{class_c_camera_a7cbeb03565688d3c743cb103b9ae2a3c}} 
+\index{CCamera@{CCamera}!originalEye@{originalEye}}
+\index{originalEye@{originalEye}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{originalEye}{originalEye}}
+{\footnotesize\ttfamily glm\+::vec3 C\+Camera\+::original\+Eye\hspace{0.3cm}{\ttfamily [protected]}}
+
+Vector neceario para el funcionamiento de la camara, haciendo referencia a una posicion anterior \mbox{\Hypertarget{class_c_camera_a7667e6438a9d62c51c691f73143e7cf5}\label{class_c_camera_a7667e6438a9d62c51c691f73143e7cf5}} 
+\index{CCamera@{CCamera}!OriginalMousePos@{OriginalMousePos}}
+\index{OriginalMousePos@{OriginalMousePos}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{OriginalMousePos}{OriginalMousePos}}
+{\footnotesize\ttfamily glm\+::vec2 C\+Camera\+::\+Original\+Mouse\+Pos}
+
+Rastrea la posicion anterior del mouse \mbox{\Hypertarget{class_c_camera_a36102da5a5883a9b00a032c002101e48}\label{class_c_camera_a36102da5a5883a9b00a032c002101e48}} 
+\index{CCamera@{CCamera}!OriginalUp@{OriginalUp}}
+\index{OriginalUp@{OriginalUp}!CCamera@{CCamera}}
+\doxysubsubsection{\texorpdfstring{OriginalUp}{OriginalUp}}
+{\footnotesize\ttfamily glm\+::vec3 C\+Camera\+::\+Original\+Up\hspace{0.3cm}{\ttfamily [protected]}}
+
+Vector neceario para el funcionamiento de la camara, haciendo referencia a una posicion anterior 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_camera_8h}{C\+Camera.\+h}}\end{DoxyCompactItemize}

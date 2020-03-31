@@ -1,0 +1,94 @@
+\hypertarget{struct_swap_chain_descriptor}{}\doxysection{Swap\+Chain\+Descriptor Struct Reference}
+\label{struct_swap_chain_descriptor}\index{SwapChainDescriptor@{SwapChainDescriptor}}
+
+
+Descriptor de Swap\+Chain.  
+
+
+
+
+{\ttfamily \#include $<$C\+Swap\+Chain.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_swap_chain_descriptor_a576a0f4271072fb536cd66e138b7b245}\label{struct_swap_chain_descriptor_a576a0f4271072fb536cd66e138b7b245}} 
+\mbox{\hyperlink{struct_s_w_a_p___c_h_a_i_n___d_e_s_c}{S\+W\+A\+P\+\_\+\+C\+H\+A\+I\+N\+\_\+\+D\+E\+SC}} {\bfseries sd}
+\item 
+\mbox{\hyperlink{struct_m_o_d_e___d_e_s_c}{M\+O\+D\+E\+\_\+\+D\+E\+SC}} \mbox{\hyperlink{struct_swap_chain_descriptor_a750e3a786f60d54667c4fddfa7d6d1e3}{Buffer\+Desc}}
+\item 
+\mbox{\hyperlink{struct_s_a_m_p_l_e___d_e_s_c}{S\+A\+M\+P\+L\+E\+\_\+\+D\+E\+SC}} \mbox{\hyperlink{struct_swap_chain_descriptor_a115ffd9a26454e29a3296f8ec30abd4a}{Sample\+Desc}}
+\item 
+U\+I\+NT \mbox{\hyperlink{struct_swap_chain_descriptor_ab54b45b6677c169eeaf4c33471874552}{Buffer\+Usage}}
+\item 
+U\+I\+NT \mbox{\hyperlink{struct_swap_chain_descriptor_aa4e9db743ce895c403cb049c60d8bba0}{Buffer\+Count}}
+\item 
+H\+W\+ND \mbox{\hyperlink{struct_swap_chain_descriptor_a38102b4791c1dabe07279b582651b3d4}{Output\+Window}}
+\item 
+B\+O\+OL \mbox{\hyperlink{struct_swap_chain_descriptor_a43412f958b78a0406e71532266e14a29}{Windowed}}
+\item 
+S\+W\+A\+P\+\_\+\+E\+F\+F\+E\+CT \mbox{\hyperlink{struct_swap_chain_descriptor_ac2341a9945d58b29c2bd2e5b3a435509}{Swap\+Effect}}
+\item 
+U\+I\+NT \mbox{\hyperlink{struct_swap_chain_descriptor_a0bf654c0e2662cefa4138163a822bdae}{Flags}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Descriptor de Swap\+Chain. 
+
+Descripcion Uso de una estructura de desripcion para mejor manejo de datos 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_swap_chain_descriptor_aa4e9db743ce895c403cb049c60d8bba0}\label{struct_swap_chain_descriptor_aa4e9db743ce895c403cb049c60d8bba0}} 
+\index{SwapChainDescriptor@{SwapChainDescriptor}!BufferCount@{BufferCount}}
+\index{BufferCount@{BufferCount}!SwapChainDescriptor@{SwapChainDescriptor}}
+\doxysubsubsection{\texorpdfstring{BufferCount}{BufferCount}}
+{\footnotesize\ttfamily U\+I\+NT Swap\+Chain\+Descriptor\+::\+Buffer\+Count}
+
+Describe el numero de buffers en el swapchain \mbox{\Hypertarget{struct_swap_chain_descriptor_a750e3a786f60d54667c4fddfa7d6d1e3}\label{struct_swap_chain_descriptor_a750e3a786f60d54667c4fddfa7d6d1e3}} 
+\index{SwapChainDescriptor@{SwapChainDescriptor}!BufferDesc@{BufferDesc}}
+\index{BufferDesc@{BufferDesc}!SwapChainDescriptor@{SwapChainDescriptor}}
+\doxysubsubsection{\texorpdfstring{BufferDesc}{BufferDesc}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_m_o_d_e___d_e_s_c}{M\+O\+D\+E\+\_\+\+D\+E\+SC}} Swap\+Chain\+Descriptor\+::\+Buffer\+Desc}
+
+Estructura que describe el modo de display del backbuffer \mbox{\Hypertarget{struct_swap_chain_descriptor_ab54b45b6677c169eeaf4c33471874552}\label{struct_swap_chain_descriptor_ab54b45b6677c169eeaf4c33471874552}} 
+\index{SwapChainDescriptor@{SwapChainDescriptor}!BufferUsage@{BufferUsage}}
+\index{BufferUsage@{BufferUsage}!SwapChainDescriptor@{SwapChainDescriptor}}
+\doxysubsubsection{\texorpdfstring{BufferUsage}{BufferUsage}}
+{\footnotesize\ttfamily U\+I\+NT Swap\+Chain\+Descriptor\+::\+Buffer\+Usage}
+
+Enumerador que describe el uso superficial y tambien las opciones de acceso del C\+PU al backbuffer \mbox{\Hypertarget{struct_swap_chain_descriptor_a0bf654c0e2662cefa4138163a822bdae}\label{struct_swap_chain_descriptor_a0bf654c0e2662cefa4138163a822bdae}} 
+\index{SwapChainDescriptor@{SwapChainDescriptor}!Flags@{Flags}}
+\index{Flags@{Flags}!SwapChainDescriptor@{SwapChainDescriptor}}
+\doxysubsubsection{\texorpdfstring{Flags}{Flags}}
+{\footnotesize\ttfamily U\+I\+NT Swap\+Chain\+Descriptor\+::\+Flags}
+
+Describe el comportamiento del Swao\+Chain \mbox{\Hypertarget{struct_swap_chain_descriptor_a38102b4791c1dabe07279b582651b3d4}\label{struct_swap_chain_descriptor_a38102b4791c1dabe07279b582651b3d4}} 
+\index{SwapChainDescriptor@{SwapChainDescriptor}!OutputWindow@{OutputWindow}}
+\index{OutputWindow@{OutputWindow}!SwapChainDescriptor@{SwapChainDescriptor}}
+\doxysubsubsection{\texorpdfstring{OutputWindow}{OutputWindow}}
+{\footnotesize\ttfamily H\+W\+ND Swap\+Chain\+Descriptor\+::\+Output\+Window}
+
+Maneja el output de la ventana y no debe ser {\ttfamily N\+U\+LL} \mbox{\Hypertarget{struct_swap_chain_descriptor_a115ffd9a26454e29a3296f8ec30abd4a}\label{struct_swap_chain_descriptor_a115ffd9a26454e29a3296f8ec30abd4a}} 
+\index{SwapChainDescriptor@{SwapChainDescriptor}!SampleDesc@{SampleDesc}}
+\index{SampleDesc@{SampleDesc}!SwapChainDescriptor@{SwapChainDescriptor}}
+\doxysubsubsection{\texorpdfstring{SampleDesc}{SampleDesc}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_a_m_p_l_e___d_e_s_c}{S\+A\+M\+P\+L\+E\+\_\+\+D\+E\+SC}} Swap\+Chain\+Descriptor\+::\+Sample\+Desc}
+
+Estructura que describe parametros multisampling \mbox{\Hypertarget{struct_swap_chain_descriptor_ac2341a9945d58b29c2bd2e5b3a435509}\label{struct_swap_chain_descriptor_ac2341a9945d58b29c2bd2e5b3a435509}} 
+\index{SwapChainDescriptor@{SwapChainDescriptor}!SwapEffect@{SwapEffect}}
+\index{SwapEffect@{SwapEffect}!SwapChainDescriptor@{SwapChainDescriptor}}
+\doxysubsubsection{\texorpdfstring{SwapEffect}{SwapEffect}}
+{\footnotesize\ttfamily S\+W\+A\+P\+\_\+\+E\+F\+F\+E\+CT Swap\+Chain\+Descriptor\+::\+Swap\+Effect}
+
+Describe las diferentes opciones para manejar los contenidos del buffer de presentacion \mbox{\Hypertarget{struct_swap_chain_descriptor_a43412f958b78a0406e71532266e14a29}\label{struct_swap_chain_descriptor_a43412f958b78a0406e71532266e14a29}} 
+\index{SwapChainDescriptor@{SwapChainDescriptor}!Windowed@{Windowed}}
+\index{Windowed@{Windowed}!SwapChainDescriptor@{SwapChainDescriptor}}
+\doxysubsubsection{\texorpdfstring{Windowed}{Windowed}}
+{\footnotesize\ttfamily B\+O\+OL Swap\+Chain\+Descriptor\+::\+Windowed}
+
+Especifica como de ve la ventana del output 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_swap_chain_8h}{C\+Swap\+Chain.\+h}}\end{DoxyCompactItemize}
